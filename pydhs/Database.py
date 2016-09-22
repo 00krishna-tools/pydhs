@@ -22,7 +22,7 @@ import psycopg2 as pg
 
 
 class Database():
-    def __init__(self, dbname):
+    def __init__(self, dbname, username, hostname, portnumber, password):
 
         try:
             self.conn = self.get_connection(dbname)
@@ -41,8 +41,12 @@ class Database():
 
         try:
             conn = pg.connect(
-                "dbname={0} user='krishnab' host='localhost' "
-                "password='3kl4vx71' port=5432 ".format(str(dbname)))
+                "dbname={0} user={1} host={2} "
+                "password={3} port={4} ".format(str(dbname),
+                                                str(username),
+                                                str(hostname),
+                                                str(password),
+                                                int(portnumber)))
             return(conn)
         except:
             print
