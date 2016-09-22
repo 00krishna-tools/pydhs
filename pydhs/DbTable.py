@@ -14,13 +14,14 @@ import numpy as np
 import pandas as pd
 import os
 import datetime
+import psycopg2 as pg
 
 ## Initialize Constants
 
 
 
 
-class Base_model():
+class Database_Table():
     def __init__(self):
         self.name = 'replication m'
         self.label = 'replication m'
