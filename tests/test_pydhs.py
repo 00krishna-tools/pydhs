@@ -9,7 +9,7 @@ Tests for `pydhs` module.
 """
 
 import pytest
-import psycopg2 as pg
+import psycopg2
 from pydhs.Database import Database
 from pydhs.DbTable import Database_Table
 from pydhs.Controller import Controller
@@ -27,27 +27,14 @@ class TestPydhs(object):
         pass
 
     def test_database_connection(self):
-        d = Database('db_antonio_india')
-        assert isinstance(d.conn, pg.extensions.connection)
+        d = Controller('db_antonio_india')
+        print(type(d.db.conn))
+        assert isinstance(d.db.conn, psycopg2.extensions.connection)
 
+    def test_controller_get_table_columns(self):
 
-    def test_database_get_
+        d = Controller('db_antonio_india')
+        res = d.get_table_columns('iabr42fl')
+        print(res)
+        assert isinstance(res, dict)
 
-
-
-
-    # def test_command_line_interface(self):
-    #     runner = CliRunner()
-    #     result = runner.invoke(cli.main)
-    #     assert result.exit_code == 0
-    #     assert 'pydhs.cli.main' in result.output
-    #     help_result = runner.invoke(cli.main, ['--help'])
-    #     assert help_result.exit_code == 0
-    #     assert '--help  Show this message and exit.' in help_result.output
-    #
-    # @classmethod
-    # def teardown_class(cls):
-    #     pass
-
-# def test_database_connection():
-#

@@ -18,7 +18,7 @@ import os
 import datetime
 import psycopg2 as pg
 import pydhs.Database as DBase
-import pydhs.DbTable as DTable
+#import pydhs.DbTable as DTable
 
 
 ## Initialize Constants
@@ -29,7 +29,22 @@ import pydhs.DbTable as DTable
 class Controller():
     def __init__(self, dbname):
 
-        self.conn = DBase.Database.get_connection(dbname)
+
+    ## create a database object inside the controller to manage state changes
+    #  to the database.
+
+        self.db = DBase.Database(dbname,
+                                    'krishnab',
+                                    'localhost',
+                                    '3kl4vx71',
+                                    5432)
+
+
+
+    def get_table_columns(self, tablename):
+
+        return(self.db.get_table_columns_dict(tablename))
+
 
 
 

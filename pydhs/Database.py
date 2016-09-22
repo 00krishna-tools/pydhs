@@ -14,7 +14,7 @@ import pandas as pd
 import os
 import datetime
 import psycopg2 as pg
-
+import psycopg2.extras as pgextras
 
 ## Initialize Constants
 
@@ -22,10 +22,14 @@ import psycopg2 as pg
 
 
 class Database():
-    def __init__(self, dbname, username, hostname, portnumber, password):
+    def __init__(self, dbname, username, hostname, password, portnumber):
 
         try:
-            self.conn = self.get_connection(dbname)
+            self.conn = self.get_connection(dbname,
+                                            username,
+                                            hostname,
+                                            password,
+                                            portnumber)
 
         except:
             print('check database connection information before proceeding')
@@ -33,10 +37,15 @@ class Database():
         if self.conn is pg.extensions.connection:
 
             self.cursor = self.conn.cursor()
-            self.dictcursor = self.conn.cursor(cursor_factory=pg.extras.DictCursor)
+            self.dictcursor = self.conn.cursor(cursor_factory=pgextras.DictCursor)
 
 
-    def get_connection(self, dbname):
+    def get_connection(self,
+                       dbname,
+                       username,
+                       hostname,
+                       password,
+                       portnumber):
 
 
         try:
@@ -56,19 +65,22 @@ class Database():
 
 
 
-    def get_table_columns(self,tablename):
+    def get_dictionary_cursor_query(self,query):
 
-        return(self.conn.cursor().execute("""select column_name from information_schema.columns where
-                table_name={0}""".format(str(tablename))))
-
-
-    def get_tables_list(self):
-
-        cursor = self.conn.cursor(cursor_factory=pg.extras.DictCursor)
+        return(self.dictcursor.execute(query))
 
 
+    def get_regular_cursor(self, query):
+
+        return(self.cursor.execute(query))
 
 
+    def get_table_columns_dict(self, tablename):
+
+        query = """SELECT column_name FROM information_schema.columns WHERE
+        table_name={0}""".format(str(tablename))
+
+        return(self.get_dictionary_cursor_query(query))
 
     def set_connection_closed(self):
         pass
