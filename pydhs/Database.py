@@ -34,9 +34,9 @@ class Database():
         except:
             print('check database connection information before proceeding')
 
-        if self.conn is pg.extensions.connection:
+        if isinstance(self.conn,pg.extensions.connection):
 
-            self.cursor = self.conn.cursor()
+            self.rcursor = self.conn.cursor()
             self.dictcursor = self.conn.cursor(cursor_factory=pgextras.DictCursor)
 
 
@@ -58,29 +58,65 @@ class Database():
                                                 int(portnumber)))
             return(conn)
         except:
-            print
-            "I am unable to connect to the database"
+            print("I am unable to connect to the database")
             return (1)
 
 
 
 
-    def get_dictionary_cursor_query(self,query):
+    def get_dictionary_cursor_query(self,query, strings = ''):
 
-        return(self.dictcursor.execute(query))
+        try:
+            self.dictcursor.execute(query, strings)
+
+        except:
+            print('Sorry, something went wrong with running the query')
+            raise
+
+        return (self.dictcursor.fetchall())
+
+    def get_regular_cursor_query(self, query, strings = ''):
+
+        try:
+            self.rcursor.execute(query, strings)
+
+        except:
+            print('Sorry, something went wrong with running the query')
+            raise
+
+        return (self.rcursor.fetchall())
 
 
-    def get_regular_cursor(self, query):
 
-        return(self.cursor.execute(query))
+    def get_dictionary_cursor_query(self,query, strings = ''):
+        try:
+
+            query = """SELECT column_name FROM information_schema.columns WHERE
+            table_name=(%s)"""
+
+            strings = 'iabr42fl'
+            self.dictcursor.execute(query, strings)
 
 
-    def get_table_columns_dict(self, tablename):
+        except:
+            print('Sorry, something went wrong with running the query')
+            raise
+
+        return (self.dictcursor.fetchall())
+
+
+
+    def get_string_query(self):
 
         query = """SELECT column_name FROM information_schema.columns WHERE
-        table_name={0}""".format(str(tablename))
+        table_name=(%s)"""
 
-        return(self.get_dictionary_cursor_query(query))
+        #return(self.get_dictionary_cursor_query(query,
+        # pg.extensions.QuotedString('iabr42fl').getquoted()))
+
+        return (self.get_dictionary_cursor_query(query, r'iabr42fl'))
+
+
 
     def set_connection_closed(self):
         pass
