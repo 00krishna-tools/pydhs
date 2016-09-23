@@ -27,6 +27,7 @@ import pydhs.Database as DBase
 
 
 class Controller():
+
     def __init__(self, dbname):
 
 
@@ -47,9 +48,27 @@ class Controller():
 
 
 
+    def get_intersection_of_dictionary(self):
 
 
 
+
+
+
+    def get_union_of_dictionary(self):
+
+
+
+
+
+    def action_create_intersected_list_of_variables(self):
+
+
+
+        ## This function will create a dictionary of all column names in the
+        # database and then intersect them and union them.
+
+        pass
 
 
 
