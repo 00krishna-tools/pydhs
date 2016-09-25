@@ -64,7 +64,7 @@ class Controller():
         table_list = self.db.get_list_of_tables_in_database('public')
 
 
-        for
+
 
 
 

@@ -68,13 +68,12 @@ class Database():
 
         try:
 
-            connection_string = "dbname={0} user={1} host={2} password={3} " \
-                                "port={4} "
-            connection_string.format(dbname,
+            connection_string = "dbname=%s user=%s host=%s password=%s " \
+                                "port=%d " % (dbname,
                                      username,
-                                     hostname,
                                      password,
-                                     portnumber)
+                                     hostname,
+                                     int(portnumber))
 
             conn = pg.connect(connection_string)
         except:
@@ -161,9 +160,15 @@ class Database():
 
 
 
-    def set_connection_closed(self,
-                              conn):
-        pass
+    def set_connection_closed(self):
+
+        self.conn.commit()
+
+        self.rcursor.close()
+        self.dictcursor.close()
+        self.conn.close()
+
+        return(1)
 
 
 
