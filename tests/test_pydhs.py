@@ -18,7 +18,7 @@ from pydhs.DbTable import Database_Table
 from pydhs.Controller import Controller
 from contextlib import contextmanager
 from click.testing import CliRunner
-
+import pandas as pd
 from pydhs import pydhs
 from pydhs import cli
 
@@ -116,7 +116,7 @@ connection.
 
 psycopg2 has 2 types of cursors: regular(list) and dictionary.
 
-sqlalchemy has XXX cursors
+sqlalchemy has only one standard cursor.
 
 asyncpg has XXX cursors
 
@@ -155,9 +155,22 @@ class Test_Database_Cursors(object):
         assert isinstance(res, list)
 
 
-    def test_database_string_query(self, dbpsycopg2):
+    def test_database_table_columns_query(self, dbpsycopg2):
 
 
         res = dbpsycopg2.get_table_column_names('iabr23fl')
-        print(res)
+        #print(res)
         assert isinstance(res, list)
+
+    def test_sqlalchemy_get_table_names_as_dataframe(self, dbsqlalchemy):
+
+        res = dbsqlalchemy.get_table_list_as_dataframe('public')
+        #print(res)
+        assert isinstance(res, pd.DataFrame)
+
+
+    def test_sqlalchemy_get_table_names_as_dataframe(self, dbsqlalchemy):
+
+        res = dbsqlalchemy.get_column_list_for_table_as_dataframe('iabr23fl')
+        print(res)
+        assert isinstance(res, pd.DataFrame)

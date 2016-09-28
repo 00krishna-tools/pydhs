@@ -19,6 +19,7 @@ import datetime
 import psycopg2 as pg
 import psycopg2.extras as pgextras
 import pandas.io.sql as psql
+import sqlalchemy as sa
 from sqlalchemy import create_engine, MetaData
 import asyncio
 import asyncpg
@@ -224,6 +225,31 @@ class DatabaseSqlalchemy():
         meta = MetaData(bind=con, reflect=True)
         print(meta)
         return(con)
+
+
+    def get_table_list_as_dataframe(self, schemaname):
+
+        vals = {'schemaname' : schemaname}
+
+        query = "SELECT tablename FROM pg_catalog.pg_tables where schemaname =:schemaname"
+        res = pd.read_sql_query(sa.text(query), self.conn, params = vals)
+        return(res)
+
+    def get_column_list_for_table_as_dataframe(self, tablename):
+
+        vals = {'tablename': tablename}
+
+        query = "SELECT column_name FROM information_schema.columns WHERE " \
+                "table_name=:tablename"
+        res = pd.read_sql_query(sa.text(query), self.conn, params=vals)
+        return (res)
+
+
+
+
+
+
+
 
 
 
