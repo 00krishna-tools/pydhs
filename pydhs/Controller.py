@@ -75,15 +75,22 @@ class Controller():
 
         pass
 
-def get_intersection_of_dictionary(query_dictionary):
-
-    return(reduce(set.intersection,
-                   (set(val) for val in query_dictionary.values())))
 
 
-def get_union_of_dictionary():
 
-    return(reduce(set.union,
-                  (set(val) for val in query_dictionary.values())))
+
+
+
+
+    def get_intersection_of_dictionary(query_dictionary):
+
+        return(reduce(set.intersection,
+                       (set(val) for val in query_dictionary.values())))
+
+
+    def get_union_of_dictionary():
+
+        return(reduce(set.union,
+                      (set(val) for val in query_dictionary.values())))
 
 
