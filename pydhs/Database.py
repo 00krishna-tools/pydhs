@@ -223,7 +223,7 @@ class DatabaseSqlalchemy():
 
         # We then bind the connection to MetaData()
         meta = MetaData(bind=con, reflect=True)
-        print(meta)
+        #print(meta)
         return(con)
 
 

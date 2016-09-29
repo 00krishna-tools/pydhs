@@ -17,8 +17,11 @@ import pandas as pd
 import os
 import datetime
 import psycopg2 as pg
-import pydhs.Database as DBase
 #import pydhs.DbTable as DTable
+import psycopg2
+from pydhs.Database import DatabasePsycopg2
+from pydhs.Database import DatabaseSqlalchemy
+import sqlalchemy
 
 
 ## Initialize Constants
