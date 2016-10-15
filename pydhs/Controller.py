@@ -22,6 +22,7 @@ import psycopg2
 from pydhs.Database import DatabasePsycopg2
 from pydhs.Database import DatabaseSqlalchemy
 import sqlalchemy
+from functools import reduce
 
 
 ## Initialize Constants
@@ -37,24 +38,25 @@ class Controller():
     ## create a database object inside the controller to manage state changes
     #  to the database.
 
-        self.db = DBase.Database(dbname,
+        self.db = DatabasePsycopg2(dbname,
                                     'krishnab',
-                                    'localhost',
                                     '3kl4vx71',
+                                    'localhost',
                                     5432)
 
 
+        self.conn_sqlalchemy = DatabaseSqlalchemy(dbname,
+                                                  'krishnab',
+                                                  '3kl4vx71',
+                                                  'localhost',
+                                                  5432)
 
-    def get_table_columns(self, tablename):
+    def _get_table_columns(self, tablename):
 
         return(self.db.get_table_columns_dict(tablename))
 
 
-
-
-
-
-    def action_write_table_list_to_database(self):
+    def action_write_table_list_to_csv(self):
 
 
 
@@ -64,25 +66,41 @@ class Controller():
 
         # Get list of tables to iterate over
 
-        table_list = self.db.get_list_of_tables_in_database('public')
+        table_list = self.conn_sqlalchemy.get_table_list_as_dataframe('public')
+        table_list.to_csv('tablelist.csv')
 
 
 
+    def action_get_variable_names_for_each_table_in_database(self, tablefile):
+
+        tables = pd.read_csv(tablefile)
+        #print(tables.columns.values)
+
+        # create an empty dictionary to hold the info.
+
+        table_fields = {}
+
+        ## iterate over tables and
+
+        for tbl in tables['tablename']:
+            table_fields[tbl] = self.db.get_table_column_names(tbl)
 
 
-
-    def write_variable_names_to_database(self):
-
-        pass
+        return(table_fields)
 
 
+    def action_get_intersection_of_fields_across_database_tables(self,
+                                                                 tablefile):
+
+        tables = self.action_get_variable_names_for_each_table_in_database(
+            tablefile)
+
+        intersected_columns = self.get_intersection_of_dictionary(tables)
+
+        print(intersected_columns)
 
 
-
-
-
-
-    def get_intersection_of_dictionary(query_dictionary):
+    def get_intersection_of_dictionary(self,query_dictionary):
 
         return(reduce(set.intersection,
                        (set(val) for val in query_dictionary.values())))

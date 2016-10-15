@@ -82,10 +82,9 @@ class TestPydhs(object):
 
     def test_sqlalchemy_connection(self):
 
-        dt = DatabaseSqlalchemy(
+        dt = DatabaseSqlalchemy('db_antonio_india',
                              'krishnab',
                              '3kl4vx71',
-                             'db_antonio_india',
                              'localhost',
                              5432)
 
@@ -174,3 +173,5 @@ class Test_Database_Cursors(object):
         res = dbsqlalchemy.get_column_list_for_table_as_dataframe('iabr23fl')
         print(res)
         assert isinstance(res, pd.DataFrame)
+
+

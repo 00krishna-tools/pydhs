@@ -198,9 +198,10 @@ class DatabaseSqlalchemy():
 
     ## Setup psycopg2 database connection.
 
-        self.conn = self.connect_to_postgres_through_sqlalchemy(dbname,
+        self.conn = self.connect_to_postgres_through_sqlalchemy(
                                                               username,
                                                               password,
+                                                              dbname,
                                                               hostname,
                                                               portnumber)
 
