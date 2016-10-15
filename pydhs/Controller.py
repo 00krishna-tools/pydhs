@@ -83,9 +83,9 @@ class Controller():
         ## iterate over tables and
 
         for tbl in tables['tablename']:
-            table_fields[tbl] = self.db.get_table_column_names(tbl)
+            table_fields[tbl] = set(self.db.get_table_column_names(tbl))
 
-
+        print(table_fields)
         return(table_fields)
 
 
@@ -95,20 +95,35 @@ class Controller():
         tables = self.action_get_variable_names_for_each_table_in_database(
             tablefile)
 
-        intersected_columns = self.get_intersection_of_dictionary(tables)
+        fields = [value for key, value in tables.items()]
 
-        print(intersected_columns)
+        intersected_columns = self.get_intersection_of_setlist(fields)
 
-
-    def get_intersection_of_dictionary(self,query_dictionary):
-
-        return(reduce(set.intersection,
-                       (set(val) for val in query_dictionary.values())))
+        pd.DataFrame(list(intersected_columns)).to_csv(
+            'intersection_fields.csv')
+        return(list(intersected_columns))
 
 
-    def get_union_of_dictionary():
+    def action_get_union_of_fields_across_database_tables(self,tablefile):
 
-        return(reduce(set.union,
-                      (set(val) for val in query_dictionary.values())))
+        tables = self.action_get_variable_names_for_each_table_in_database(
+            tablefile)
+
+        fields = [value for key, value in tables.items()]
+
+        union_columns = self.get_union_of_setlist(fields)
+
+        pd.DataFrame(list(union_columns)).to_csv('union_fields.csv')
+        return(list(union_columns))
+
+
+    def get_intersection_of_setlist(self,setlist):
+
+        return(set.intersection(*setlist))
+
+
+    def get_union_of_setlist(self, setlist):
+
+        return (set.union(*setlist))
 
 

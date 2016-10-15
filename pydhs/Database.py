@@ -144,7 +144,7 @@ class DatabasePsycopg2():
         query = "SELECT column_name FROM information_schema.columns WHERE " \
                 "table_name=(%s)"
 
-        return (self.get_dictionary_cursor_query(query, (tablename,)))
+        return (self.get_regular_cursor_query(query, (tablename,)))
 
 
 

@@ -85,3 +85,7 @@ class TestController(object):
         c.action_get_intersection_of_fields_across_database_tables(
             'tablelist2.csv')
 
+    def test_union_of_columns(self):
+        c = Controller('db_antonio_india')
+        c.action_get_union_of_fields_across_database_tables(
+            'tablelist2.csv')
