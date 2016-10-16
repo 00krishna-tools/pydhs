@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Database.py" afterPath="$PROJECT_DIR$/pydhs/Database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_controller.py" afterPath="$PROJECT_DIR$/tests/test_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_pydhs.py" afterPath="$PROJECT_DIR$/tests/test_pydhs.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,15 +20,20 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pydhs$test_pydhs.coverage" NAME="test_pydhs Coverage Results" MODIFIED="1475092140667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/pydhs$test_controller.coverage" NAME="test_controller Coverage Results" MODIFIED="1476513128143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors.coverage" NAME="py.test in Test_Database_Cursors Coverage Results" MODIFIED="1475094219702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestPydhs_and_test_sqlalchemy_connection.coverage" NAME="py.test in TestPydhs and test_sqlalchemy_connection Coverage Results" MODIFIED="1476517769112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_intersection_table.coverage" NAME="py.test in TestController and test_create_intersection_table Coverage Results" MODIFIED="1476588909389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController.coverage" NAME="py.test in TestController Coverage Results" MODIFIED="1476509783260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestPydhs.coverage" NAME="py.test in TestPydhs Coverage Results" MODIFIED="1476507406219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$pytest_dhs.coverage" NAME="pytest_dhs Coverage Results" MODIFIED="1475090975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_sqlalchemy_get_variables_from_each_table.coverage" NAME="py.test in TestController and test_sqlalchemy_get_variables_from_each_table Coverage Results" MODIFIED="1476512305857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_sqlalchemy_create_table.coverage" NAME="py.test in Test_Database_Cursors and test_sqlalchemy_create_table Coverage Results" MODIFIED="1476585478281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_union_of_columns.coverage" NAME="py.test in TestController and test_union_of_columns Coverage Results" MODIFIED="1476516079521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_union_table.coverage" NAME="py.test in TestController and test_create_union_table Coverage Results" MODIFIED="1476591311288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$test_controller.coverage" NAME="test_controller Coverage Results" MODIFIED="1476513128143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors.coverage" NAME="py.test in Test_Database_Cursors Coverage Results" MODIFIED="1475094219702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$pytest_dhs.coverage" NAME="pytest_dhs Coverage Results" MODIFIED="1475090975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_cursor.coverage" NAME="py.test in Test_Database_Cursors and test_cursor Coverage Results" MODIFIED="1475091229043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_table_from_union_of_columns.coverage" NAME="py.test in TestController and test_create_table_from_union_of_columns Coverage Results" MODIFIED="1476518873337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_intersection_of_columns.coverage" NAME="py.test in TestController and test_intersection_of_columns Coverage Results" MODIFIED="1476513416613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_union_of_columns.coverage" NAME="py.test in TestController and test_union_of_columns Coverage Results" MODIFIED="1476513905816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,17 +46,17 @@
             <file leaf-file-name="Database.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="345">
-                    <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+                  <state relative-caret-position="529">
+                    <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
                     <folding>
                       <element signature="e#351#369#0" expanded="true" />
-                      <marker date="1476512258943" expanded="true" signature="3677:3733" ph="SELECT colum... columns" />
-                      <marker date="1476512258943" expanded="true" signature="3677:3770" ph="SELECT colum... columns" />
-                      <marker date="1476512258943" expanded="true" signature="3955:4003" ph="SELECT table... pg_tables" />
-                      <marker date="1476512258943" expanded="true" signature="3955:4041" ph="SELECT table... pg_tables" />
-                      <marker date="1476512258943" expanded="true" signature="6071:6143" ph="SELECT table... pg_tables" />
-                      <marker date="1476512258943" expanded="true" signature="6364:6420" ph="SELECT colum... columns" />
-                      <marker date="1476512258943" expanded="true" signature="6364:6463" ph="SELECT colum... columns" />
+                      <marker date="1476588901249" expanded="true" signature="3779:3835" ph="SELECT colum... columns" />
+                      <marker date="1476588901249" expanded="true" signature="3779:3872" ph="SELECT colum... columns" />
+                      <marker date="1476588901249" expanded="true" signature="4057:4105" ph="SELECT table... pg_tables" />
+                      <marker date="1476588901249" expanded="true" signature="4057:4143" ph="SELECT table... pg_tables" />
+                      <marker date="1476588901249" expanded="true" signature="6242:6314" ph="SELECT table... pg_tables" />
+                      <marker date="1476588901249" expanded="true" signature="6535:6591" ph="SELECT colum... columns" />
+                      <marker date="1476588901249" expanded="true" signature="6535:6634" ph="SELECT colum... columns" />
                     </folding>
                   </state>
                 </provider>
@@ -70,10 +76,25 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_pydhs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+              <folding>
+                <element signature="e#143#156#0" expanded="true" />
+                <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+                <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+                <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
               </folding>
             </state>
           </provider>
@@ -82,8 +103,8 @@
       <file leaf-file-name="test_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state relative-caret-position="357">
+              <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
               <folding>
                 <element signature="e#139#152#0" expanded="true" />
               </folding>
@@ -211,26 +232,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_pydhs.py" />
     <property name="editor.config.accepted" value="true" />
   </component>
-  <component name="RunManager" selected="Python tests.py.test in TestController and test_union_of_columns">
-    <configuration default="false" name="test_controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pydhs" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_controller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in TestController" type="tests" factoryName="py.test" temporary="true">
+  <component name="RunManager" selected="Python tests.py.test in TestController and test_create_union_table">
+    <configuration default="false" name="py.test in TestController and test_create_table_from_union_of_columns" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -249,13 +252,13 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="testToRun" value="$PROJECT_DIR$/tests/test_controller.py" />
-      <option name="keywords" value="TestController" />
+      <option name="keywords" value="TestController and test_create_table_from_union_of_columns" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="py.test in TestController and test_sqlalchemy_get_variables_from_each_table" type="tests" factoryName="py.test" temporary="true">
+    <configuration default="false" name="py.test in TestPydhs and test_sqlalchemy_connection" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -273,14 +276,14 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/tests/test_controller.py" />
-      <option name="keywords" value="TestController and test_sqlalchemy_get_variables_from_each_table" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/test_pydhs.py" />
+      <option name="keywords" value="TestPydhs and test_sqlalchemy_connection" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="py.test in TestController and test_intersection_of_columns" type="tests" factoryName="py.test" temporary="true">
+    <configuration default="false" name="py.test in Test_Database_Cursors and test_sqlalchemy_create_table" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -298,14 +301,14 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/tests/test_controller.py" />
-      <option name="keywords" value="TestController and test_intersection_of_columns" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/test_pydhs.py" />
+      <option name="keywords" value="Test_Database_Cursors and test_sqlalchemy_create_table" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="py.test in TestController and test_union_of_columns" type="tests" factoryName="py.test" temporary="true">
+    <configuration default="false" name="py.test in TestController and test_create_intersection_table" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -324,7 +327,32 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="testToRun" value="$PROJECT_DIR$/tests/test_controller.py" />
-      <option name="keywords" value="TestController and test_union_of_columns" />
+      <option name="keywords" value="TestController and test_create_intersection_table" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in TestController and test_create_union_table" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pydhs" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/test_controller.py" />
+      <option name="keywords" value="TestController and test_create_union_table" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
@@ -565,19 +593,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.pytest_dhs" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_controller" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestController" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_sqlalchemy_get_variables_from_each_table" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_intersection_of_columns" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_union_of_columns" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_create_table_from_union_of_columns" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestPydhs and test_sqlalchemy_connection" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in Test_Database_Cursors and test_sqlalchemy_create_table" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_create_intersection_table" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_create_union_table" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_union_of_columns" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_intersection_of_columns" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test_controller" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_sqlalchemy_get_variables_from_each_table" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestController" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_create_union_table" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_create_intersection_table" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in Test_Database_Cursors and test_sqlalchemy_create_table" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_create_table_from_union_of_columns" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestPydhs and test_sqlalchemy_connection" />
       </list>
     </recent_temporary>
   </component>
@@ -679,39 +707,46 @@
       <option name="project" value="LOCAL" />
       <updated>1476510657492</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="created and tested the functions to get the intersection and union of db columns working. So this feature now works.&#10;">
+      <created>1476514629366</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1476514629366</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_TestController_and_test_intersection_of_columns - 2016.10.14 at 23h 32m 43s.xml">
-      <configuration name="py.test in TestController and test_intersection_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 22m 18s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_intersection_of_columns - 2016.10.14 at 23h 36m 08s.xml">
-      <configuration name="py.test in TestController and test_intersection_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 29m 39s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_intersection_of_columns - 2016.10.14 at 23h 36m 58s.xml">
-      <configuration name="py.test in TestController and test_intersection_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 31m 55s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_sqlalchemy_get_variables_from_each_table - 2016.10.14 at 23h 15m 33s.xml">
-      <configuration name="py.test in TestController and test_sqlalchemy_get_variables_from_each_table" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 32m 02s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_sqlalchemy_get_variables_from_each_table - 2016.10.14 at 23h 17m 40s.xml">
-      <configuration name="py.test in TestController and test_sqlalchemy_get_variables_from_each_table" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 33m 39s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_sqlalchemy_get_variables_from_each_table - 2016.10.14 at 23h 18m 27s.xml">
-      <configuration name="py.test in TestController and test_sqlalchemy_get_variables_from_each_table" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 33m 44s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_union_of_columns - 2016.10.14 at 23h 40m 18s.xml">
-      <configuration name="py.test in TestController and test_union_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_intersection_table - 2016.10.15 at 20h 35m 10s.xml">
+      <configuration name="py.test in TestController and test_create_intersection_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_union_of_columns - 2016.10.14 at 23h 41m 01s.xml">
-      <configuration name="py.test in TestController and test_union_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_union_table - 2016.10.15 at 21h 08m 02s.xml">
+      <configuration name="py.test in TestController and test_create_union_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_union_of_columns - 2016.10.14 at 23h 41m 52s.xml">
-      <configuration name="py.test in TestController and test_union_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_union_table - 2016.10.15 at 21h 09m 19s.xml">
+      <configuration name="py.test in TestController and test_create_union_table" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_TestController_and_test_union_of_columns - 2016.10.14 at 23h 45m 07s.xml">
-      <configuration name="py.test in TestController and test_union_of_columns" configurationId="tests" />
+    <history-entry file="py_test_in_TestController_and_test_create_union_table - 2016.10.15 at 21h 15m 13s.xml">
+      <configuration name="py.test in TestController and test_create_union_table" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -760,18 +795,19 @@
     <MESSAGE value="major changes to the database modules. But it is working. reorganized test cases. separate database objects into 3 different types of objects." />
     <MESSAGE value="have the sqlalchemy interfaces to the database working as well as pulling data back into pandas. So that is great." />
     <MESSAGE value="set up functions in controller to get all tables and fields from each table.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up functions in controller to get all tables and fields from each table.&#10;" />
+    <MESSAGE value="created and tested the functions to get the intersection and union of db columns working. So this feature now works.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="created and tested the functions to get the intersection and union of db columns working. So this feature now works.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/pydhs/Controller.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/pydhs/Database.py</url>
+          <line>260</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -792,9 +828,9 @@
           <caret line="14" column="17" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -825,9 +861,9 @@
           <caret line="14" column="17" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -858,9 +894,9 @@
           <caret line="14" column="17" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -891,9 +927,9 @@
           <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -904,13 +940,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#351#369#0" expanded="true" />
-            <marker date="1476512258943" expanded="true" signature="3677:3733" ph="SELECT colum... columns" />
-            <marker date="1476512258943" expanded="true" signature="3677:3770" ph="SELECT colum... columns" />
-            <marker date="1476512258943" expanded="true" signature="3955:4003" ph="SELECT table... pg_tables" />
-            <marker date="1476512258943" expanded="true" signature="3955:4041" ph="SELECT table... pg_tables" />
-            <marker date="1476512258943" expanded="true" signature="6071:6143" ph="SELECT table... pg_tables" />
-            <marker date="1476512258943" expanded="true" signature="6364:6420" ph="SELECT colum... columns" />
-            <marker date="1476512258943" expanded="true" signature="6364:6463" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="3779:3835" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="3779:3872" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="4057:4105" ph="SELECT table... pg_tables" />
+            <marker date="1476588901249" expanded="true" signature="4057:4143" ph="SELECT table... pg_tables" />
+            <marker date="1476588901249" expanded="true" signature="6242:6314" ph="SELECT table... pg_tables" />
+            <marker date="1476588901249" expanded="true" signature="6535:6591" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="6535:6634" ph="SELECT colum... columns" />
           </folding>
         </state>
       </provider>
@@ -931,9 +967,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -954,17 +990,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/DbTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1001,50 +1030,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/assertion/rewrite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="86" column="40" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476507406163" expanded="true" signature="2555:2558" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3108:3196" ph="select colum... columns" />
-            <marker date="1476507406163" expanded="true" signature="3441:3529" ph="select colum... columns" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/py/_path/local.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state relative-caret-position="167">
+          <caret line="663" column="0" selection-start-line="663" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/DbTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
-            <element signature="e#351#369#0" expanded="true" />
-            <marker date="1476512258943" expanded="true" signature="3677:3733" ph="SELECT colum... columns" />
-            <marker date="1476512258943" expanded="true" signature="3677:3770" ph="SELECT colum... columns" />
-            <marker date="1476512258943" expanded="true" signature="3955:4003" ph="SELECT table... pg_tables" />
-            <marker date="1476512258943" expanded="true" signature="3955:4041" ph="SELECT table... pg_tables" />
-            <marker date="1476512258943" expanded="true" signature="6071:6143" ph="SELECT table... pg_tables" />
-            <marker date="1476512258943" expanded="true" signature="6364:6420" ph="SELECT colum... columns" />
-            <marker date="1476512258943" expanded="true" signature="6364:6463" ph="SELECT colum... columns" />
+            <element signature="e#143#156#0" expanded="true" />
+            <marker date="1476585407749" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476585407749" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state relative-caret-position="357">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
           <folding>
             <element signature="e#139#152#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+          <folding>
+            <element signature="e#351#369#0" expanded="true" />
+            <marker date="1476588901249" expanded="true" signature="3779:3835" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="3779:3872" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="4057:4105" ph="SELECT table... pg_tables" />
+            <marker date="1476588901249" expanded="true" signature="4057:4143" ph="SELECT table... pg_tables" />
+            <marker date="1476588901249" expanded="true" signature="6242:6314" ph="SELECT table... pg_tables" />
+            <marker date="1476588901249" expanded="true" signature="6535:6591" ph="SELECT colum... columns" />
+            <marker date="1476588901249" expanded="true" signature="6535:6634" ph="SELECT colum... columns" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="418">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
           </folding>

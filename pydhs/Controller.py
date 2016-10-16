@@ -23,7 +23,7 @@ from pydhs.Database import DatabasePsycopg2
 from pydhs.Database import DatabaseSqlalchemy
 import sqlalchemy
 from functools import reduce
-
+from sqlalchemy.ext.declarative import declarative_base
 
 ## Initialize Constants
 
@@ -50,6 +50,8 @@ class Controller():
                                                   '3kl4vx71',
                                                   'localhost',
                                                   5432)
+
+
 
     def _get_table_columns(self, tablename):
 
@@ -85,7 +87,7 @@ class Controller():
         for tbl in tables['tablename']:
             table_fields[tbl] = set(self.db.get_table_column_names(tbl))
 
-        print(table_fields)
+        #print(table_fields)
         return(table_fields)
 
 
@@ -97,11 +99,10 @@ class Controller():
 
         fields = [value for key, value in tables.items()]
 
-        intersected_columns = self.get_intersection_of_setlist(fields)
-
-        pd.DataFrame(list(intersected_columns)).to_csv(
-            'intersection_fields.csv')
-        return(list(intersected_columns))
+        intersected_columns = pd.DataFrame(list(
+            self.get_intersection_of_setlist(fields)))
+        intersected_columns.columns = ['fields']
+        return(intersected_columns)
 
 
     def action_get_union_of_fields_across_database_tables(self,tablefile):
@@ -111,10 +112,30 @@ class Controller():
 
         fields = [value for key, value in tables.items()]
 
-        union_columns = self.get_union_of_setlist(fields)
+        union_columns = pd.DataFrame(list(self.get_union_of_setlist(fields)))
+        union_columns.columns = ['fields']
+        print(union_columns['fields'])
+        return(union_columns)
 
-        pd.DataFrame(list(union_columns)).to_csv('union_fields.csv')
-        return(list(union_columns))
+
+    def action_build_union_fields_table(self, tablename,tablefile):
+
+        fields = self.action_get_union_of_fields_across_database_tables(
+            tablefile).sort_values('fields', ascending=True)
+
+        # Note that there is a hard limit in postgres on 1600 columns in a table
+
+        self.conn_sqlalchemy._build_table_class(tablename, fields[:1599])
+
+    def action_build_intersection_fields_table(self, tablename, tablefile):
+
+        fields = self.action_get_intersection_of_fields_across_database_tables(
+            tablefile).sort_values('fields', ascending=True)
+
+
+        self.conn_sqlalchemy._build_table_class(tablename, fields)
+
+
 
 
     def get_intersection_of_setlist(self,setlist):

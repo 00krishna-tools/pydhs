@@ -21,7 +21,9 @@ from click.testing import CliRunner
 import pandas as pd
 from pydhs import pydhs
 from pydhs import cli
-
+from sqlalchemy import create_engine, Column, Integer, Sequence, String, Date, Float, BIGINT
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
 
 
@@ -38,9 +40,9 @@ def dbpsycopg2():
 
 @pytest.fixture(scope="module")
 def dbsqlalchemy():
-    conn = DatabaseSqlalchemy('krishnab',
+    conn = DatabaseSqlalchemy('db_antonio_india',
+                             'krishnab',
                              '3kl4vx71',
-                             'db_antonio_india',
                              'localhost',
                              5432)
 
@@ -175,3 +177,14 @@ class Test_Database_Cursors(object):
         assert isinstance(res, pd.DataFrame)
 
 
+    def test_sqlalchemy_create_table(self, dbsqlalchemy):
+
+        Base = declarative_base()
+
+        class NewTable(Base):
+            __tablename__ = 'testtable'
+            id = Column(Integer, primary_key=True)
+            open = Column(String(255))
+            close = Column(String(255))
+
+        Base.metadata.create_all(dbsqlalchemy.conn)

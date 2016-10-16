@@ -23,7 +23,8 @@ import sqlalchemy as sa
 from sqlalchemy import create_engine, MetaData
 import asyncio
 import asyncpg
-
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, String, Integer
 
 
 
@@ -205,6 +206,7 @@ class DatabaseSqlalchemy():
                                                               hostname,
                                                               portnumber)
 
+        self.rconn = self.conn.raw_connection()
 
     def connect_to_postgres_through_sqlalchemy(self,
                                                username,
@@ -221,7 +223,7 @@ class DatabaseSqlalchemy():
 
         # The return value of create_engine() is our connection object
         con = create_engine(url, client_encoding='utf8')
-
+        con.connect()
         # We then bind the connection to MetaData()
         meta = MetaData(bind=con, reflect=True)
         #print(meta)
@@ -246,12 +248,20 @@ class DatabaseSqlalchemy():
         return (res)
 
 
+    def _build_table_class(self, tablename, fields):
+        Base = declarative_base()
+
+        class NewTable(Base):
+            __tablename__ = tablename
+
+            id = Column(Integer, primary_key=True)
 
 
+        for index, row in fields.iterrows():
+            setattr(NewTable, row['fields'], Column(String(255)))
 
 
-
-
+        Base.metadata.create_all(self.conn)
 
 
 '''

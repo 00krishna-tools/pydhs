@@ -89,3 +89,19 @@ class TestController(object):
         c = Controller('db_antonio_india')
         c.action_get_union_of_fields_across_database_tables(
             'tablelist2.csv')
+
+
+    def test_create_table_from_union_of_columns(self):
+        c = Controller('db_antonio_india')
+        c.action_build_union_fields_table('tablelist2.csv')
+
+    def test_create_intersection_table(self):
+        c = Controller('db_antonio_india')
+        c.action_build_intersection_fields_table(
+            'intersect_table','tablelist2.csv')
+
+
+    def test_create_union_table(self):
+        c = Controller('db_antonio_india')
+        c.action_build_union_fields_table(
+            'union_table', 'tablelist2.csv')
