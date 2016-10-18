@@ -206,6 +206,17 @@ class Controller():
 
         return(0)
 
+
+    def action_set_table_names_to_lowercase(self):
+
+        self.db.set_all_table_names_to_lowercase()
+
+
+    def action_set_field_names_to_lowercase(self):
+
+        self.db.set_all_field_names_to_lowercase()
+
+
     def get_intersection_of_setlist(self,setlist):
 
         return(set.intersection(*setlist))
