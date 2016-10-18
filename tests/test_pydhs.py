@@ -163,6 +163,18 @@ class Test_Database_Cursors(object):
         #print(res)
         assert isinstance(res, list)
 
+
+    def test_update_table_names_to_lowercase(self, dbpsycopg2):
+
+        dbpsycopg2.set_all_table_names_to_lowercase()
+
+    def test_update_column_names_to_lowercase(self, dbpsycopg2):
+
+        dbpsycopg2.set_all_field_names_to_lowercase()
+
+
+
+
     def test_sqlalchemy_get_table_names_as_dataframe(self, dbsqlalchemy):
 
         res = dbsqlalchemy.get_table_list_as_dataframe('public')
@@ -188,3 +200,4 @@ class Test_Database_Cursors(object):
             close = Column(String(255))
 
         Base.metadata.create_all(dbsqlalchemy.conn)
+

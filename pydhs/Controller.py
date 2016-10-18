@@ -32,6 +32,9 @@ from sqlalchemy.ext.declarative import declarative_base
 
 class Controller():
 
+
+
+
     def __init__(self, dbname):
 
 
@@ -51,7 +54,7 @@ class Controller():
                                                   'localhost',
                                                   5432)
 
-
+        self.table_fields = {}
 
     def _get_table_columns(self, tablename):
 
@@ -87,6 +90,8 @@ class Controller():
         for tbl in tables['tablename']:
             table_fields[tbl] = set(self.db.get_table_column_names(tbl))
 
+        self.database_table_fields = table_fields
+
         #print(table_fields)
         return(table_fields)
 
@@ -102,6 +107,7 @@ class Controller():
         intersected_columns = pd.DataFrame(list(
             self.get_intersection_of_setlist(fields)))
         intersected_columns.columns = ['fields']
+
         return(intersected_columns)
 
 
@@ -134,6 +140,14 @@ class Controller():
 
 
         self.conn_sqlalchemy._build_table_class(tablename, fields)
+
+
+    def action_insert_data_to_union_table(self):
+
+        pass
+
+
+
 
 
 

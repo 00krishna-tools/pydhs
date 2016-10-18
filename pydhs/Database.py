@@ -136,6 +136,19 @@ class DatabasePsycopg2():
         return (self.rcursor.fetchall())
 
 
+    def get_regular_cursor_query_no_return(self,
+                                 query,
+                                 strings = ('',)):
+
+        try:
+            self.rcursor.execute(query, strings)
+            self.conn.commit()
+        except:
+            print('Sorry, something went wrong with running the query')
+            raise
+
+        return (0)
+
 
     def get_table_column_names(self,
                                tablename):
@@ -156,6 +169,52 @@ class DatabasePsycopg2():
                 "=(%s)"
 
         return (self.get_dictionary_cursor_query(query, (schema,)))
+
+    def set_all_table_names_to_lowercase(self):
+
+        # This query will generate queries for all capitalized tablenames"
+
+        query = """SELECT 'ALTER TABLE ' || quote_ident(t.table_schema) || '.'
+  || quote_ident(t.table_name) || ' RENAME TO ' || quote_ident(lower(t.table_name)) || ';' As ddlsql
+  FROM information_schema.tables As t
+  WHERE t.table_schema NOT IN('information_schema', 'pg_catalog')
+      AND t.table_name <> lower(t.table_name)
+  ORDER BY t.table_schema, t.table_name;"""
+
+        list_of_updates = self.get_regular_cursor_query(query)
+
+        print(list_of_updates)
+        for q in list_of_updates:
+            print(type(q[0]))
+            print(q[0])
+            self.get_regular_cursor_query_no_return(q[0])
+
+        list_of_updates = self.get_regular_cursor_query(query)
+
+        print(len(list_of_updates))
+
+        print(self.get_list_of_tables_in_database('public'))
+
+    def set_all_field_names_to_lowercase(self):
+
+        query = """SELECT  'ALTER TABLE ' || quote_ident(c.table_schema) || '.'
+  || quote_ident(c.table_name) || ' RENAME "' || c.column_name || '" TO ' || quote_ident(lower(c.column_name)) || ';' As ddlsql
+  FROM information_schema.columns As c
+  WHERE c.table_schema NOT IN('information_schema', 'pg_catalog')
+      AND c.column_name <> lower(c.column_name)
+  ORDER BY c.table_schema, c.table_name, c.column_name;"""
+
+        list_of_updates = self.get_regular_cursor_query(query)
+
+        print(list_of_updates)
+        for q in list_of_updates:
+            print(type(q[0]))
+            print(q[0])
+            self.get_regular_cursor_query_no_return(q[0])
+
+        list_of_updates = self.get_regular_cursor_query(query)
+
+        print(len(list_of_updates))
 
 
 
@@ -256,12 +315,19 @@ class DatabaseSqlalchemy():
 
             id = Column(Integer, primary_key=True)
 
-
         for index, row in fields.iterrows():
             setattr(NewTable, row['fields'], Column(String(255)))
 
 
         Base.metadata.create_all(self.conn)
+
+
+
+
+
+
+
+
 
 
 '''
