@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/convert_table_and_field_names_to_lowercase" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Database.py" afterPath="$PROJECT_DIR$/pydhs/Database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_pydhs.py" afterPath="$PROJECT_DIR$/tests/test_pydhs.py" />
     </list>
     <ignored path="pydhs.iws" />
@@ -30,11 +29,11 @@
     <SUITE FILE_PATH="coverage/pydhs$test_controller.coverage" NAME="test_controller Coverage Results" MODIFIED="1476513128143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors.coverage" NAME="py.test in Test_Database_Cursors Coverage Results" MODIFIED="1475094219702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$pytest_dhs.coverage" NAME="pytest_dhs Coverage Results" MODIFIED="1475090975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase Coverage Results" MODIFIED="1476819395862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase Coverage Results" MODIFIED="1476821691907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_cursor.coverage" NAME="py.test in Test_Database_Cursors and test_cursor Coverage Results" MODIFIED="1475091229043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_table_from_union_of_columns.coverage" NAME="py.test in TestController and test_create_table_from_union_of_columns Coverage Results" MODIFIED="1476518873337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_intersection_of_columns.coverage" NAME="py.test in TestController and test_intersection_of_columns Coverage Results" MODIFIED="1476513416613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase Coverage Results" MODIFIED="1476819368545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase Coverage Results" MODIFIED="1476821671027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -46,70 +45,6 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - db_antonio_india@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - db_antonio_india@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db_antonio_india" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - db_antonio_india@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db_antonio_india" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - db_antonio_india@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db_antonio_india" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="capital_table" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="DockManager">
     <window id="1">
@@ -151,7 +86,7 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-227">
+            <state relative-caret-position="-388">
               <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
@@ -163,13 +98,13 @@
       <file leaf-file-name="test_pydhs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="177" column="24" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="24" />
+            <state relative-caret-position="113">
+              <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
               <folding>
                 <element signature="e#143#156#0" expanded="true" />
-                <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-                <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-                <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+                <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+                <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+                <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
               </folding>
             </state>
           </provider>
@@ -178,7 +113,7 @@
       <file leaf-file-name="test_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="196">
               <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
               <folding>
                 <element signature="e#139#152#0" expanded="true" />
@@ -206,8 +141,10 @@
         <option value="$PROJECT_DIR$/pydhs/Database_Pandas.py" />
         <option value="$PROJECT_DIR$/tests/test_controller.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
-        <option value="$PROJECT_DIR$/tests/test_pydhs.py" />
         <option value="$PROJECT_DIR$/pydhs/Database.py" />
+        <option value="$PROJECT_DIR$/tests/test_pydhs.py" />
+        <option value="$PROJECT_DIR$/scripts/convert_table_and_field_names_to_lowercase" />
+        <option value="dbtable:/ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743/db_antonio_india.public.capital_table" />
       </list>
     </option>
   </component>
@@ -276,6 +213,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pydhs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pydhs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -797,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476638796964</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added function to comvert all table names and column names to lowercase.">
+      <created>1476819440785</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1476819440785</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -807,11 +765,8 @@
     <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase - 2016.10.18 at 12h 36m 36s.xml">
       <configuration name="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase - 2016.10.18 at 12h 05m 57s.xml">
-      <configuration name="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase - 2016.10.18 at 12h 11m 23s.xml">
-      <configuration name="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase" configurationId="tests" />
+    <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase - 2016.10.18 at 13h 14m 53s.xml">
+      <configuration name="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase - 2016.10.18 at 12h 13m 30s.xml">
       <configuration name="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase" configurationId="tests" />
@@ -831,6 +786,9 @@
     <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase - 2016.10.18 at 12h 36m 09s.xml">
       <configuration name="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase - 2016.10.18 at 13h 14m 32s.xml">
+      <configuration name="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1035" extended-state="0" />
@@ -839,7 +797,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2695187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -880,7 +838,8 @@
     <MESSAGE value="set up functions in controller to get all tables and fields from each table.&#10;" />
     <MESSAGE value="created and tested the functions to get the intersection and union of db columns working. So this feature now works.&#10;" />
     <MESSAGE value="created functions to generate union and intersect tables in database. So this feature now generates empty tables. Next task is to fill those tables." />
-    <option name="LAST_COMMIT_MESSAGE" value="created functions to generate union and intersect tables in database. So this feature now generates empty tables. Next task is to fill those tables." />
+    <MESSAGE value="Added function to comvert all table names and column names to lowercase." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function to comvert all table names and column names to lowercase." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -905,9 +864,9 @@
           <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -957,9 +916,9 @@
           <caret line="14" column="17" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -990,9 +949,9 @@
           <caret line="14" column="17" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -1023,9 +982,9 @@
           <caret line="14" column="17" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -1056,9 +1015,9 @@
           <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -1098,9 +1057,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -1121,9 +1080,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
@@ -1197,7 +1156,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
+        <state relative-caret-position="-388">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
@@ -1207,7 +1166,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="196">
           <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
           <folding>
             <element signature="e#139#152#0" expanded="true" />
@@ -1234,15 +1193,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/convert_table_and_field_names_to_lowercase">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743/db_antonio_india.public.capital_table">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="177" column="24" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="24" />
+        <state relative-caret-position="113">
+          <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
           <folding>
             <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819078647" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819078647" expanded="true" signature="3629:3717" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
