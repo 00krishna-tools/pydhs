@@ -105,3 +105,13 @@ class TestController(object):
         c = Controller('db_antonio_india')
         c.action_build_union_fields_table(
             'union_table', 'tablelist2.csv')
+
+
+    def test_insert_data_into_master_table(self):
+        c = Controller('db_antonio_india')
+        c.action_insert_data_to_union_table('tablelist2.csv', 'union_table')
+
+    def test_add_column_name_to_each_db_table(self):
+
+        c = Controller('db_antonio_india')
+        c.action_add_table_name_to_each_database_table('tablelist2.csv')

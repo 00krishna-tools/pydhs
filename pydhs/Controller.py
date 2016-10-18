@@ -24,6 +24,9 @@ from pydhs.Database import DatabaseSqlalchemy
 import sqlalchemy
 from functools import reduce
 from sqlalchemy.ext.declarative import declarative_base
+from psycopg2.extensions import AsIs
+
+
 
 ## Initialize Constants
 
@@ -54,7 +57,7 @@ class Controller():
                                                   'localhost',
                                                   5432)
 
-        self.table_fields = {}
+        self.database_table_fields = {}
 
     def _get_table_columns(self, tablename):
 
@@ -142,15 +145,66 @@ class Controller():
         self.conn_sqlalchemy._build_table_class(tablename, fields)
 
 
-    def action_insert_data_to_union_table(self):
+    def action_insert_data_to_union_table(self, tablefile, destination_table):
 
-        pass
+        ## First, update the table and field names in case of changes.
+
+        self.action_get_variable_names_for_each_table_in_database(tablefile)
+
+        ##
+
+        t = set(self.db.get_table_column_names(
+            destination_table))
+
+        destination_table_fields = set([v[0] for v in t])
+        query_list = []
+
+        for key, value in self.database_table_fields.items():
+
+            s = [v[0] for v in value]
+            setlist = [set(destination_table_fields), set(s)]
+
+            fields = self.get_intersection_of_setlist(setlist)
+
+            fields = list(fields)
+
+            string_fields = ','.join(map(str, fields))
+
+            query = "insert into " + str(destination_table) + " (" + string_fields + \
+                    ") " + \
+                    "select " + string_fields + " from " + key + ";"
+
+            query_list.append(query)
+
+        #print(query_list)
+
+        for q in query_list:
+            self.db.get_regular_cursor_query_no_return(q)
 
 
+    def action_add_table_name_to_each_database_table(self, tablefile):
 
+        tables = pd.read_csv(tablefile)
 
+        for tbl in tables['tablename']:
 
+            query = """DO
+            $$
+            BEGIN
+            IF not EXISTS (SELECT column_name
+                           FROM information_schema.columns
+                           WHERE table_schema='public' and table_name=%s and
+                           column_name='tablename') THEN
+            alter table %s add column tablename varchar default null ;
+            else
+            raise NOTICE 'Already exists';
+            END IF;
+            END
+            $$"""
 
+            self.db.get_regular_cursor_query_no_return(query, (tbl, AsIs(tbl)))
+
+        return(0)
 
     def get_intersection_of_setlist(self,setlist):
 

@@ -191,9 +191,8 @@ class DatabasePsycopg2():
 
         list_of_updates = self.get_regular_cursor_query(query)
 
-        print(len(list_of_updates))
-
-        print(self.get_list_of_tables_in_database('public'))
+        if len(list_of_updates) > 0:
+            print("not all table names were fixed. Try again.")
 
     def set_all_field_names_to_lowercase(self):
 
@@ -214,7 +213,13 @@ class DatabasePsycopg2():
 
         list_of_updates = self.get_regular_cursor_query(query)
 
-        print(len(list_of_updates))
+        if len(list_of_updates) > 0:
+            print("not all table names were fixed. Try again.")
+
+
+
+
+
 
 
 
