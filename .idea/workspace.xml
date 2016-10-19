@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/build_consolidated_database.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +59,8 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2235">
-              <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+            <state relative-caret-position="73">
+              <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
               </folding>
@@ -68,7 +71,7 @@
       <file leaf-file-name="test_pydhs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3864">
+            <state relative-caret-position="1292">
               <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding>
                 <element signature="e#143#156#0" expanded="true" />
@@ -95,8 +98,8 @@
       <file leaf-file-name="prepare_database_for_processing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
+            <state relative-caret-position="648">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
               <folding>
                 <element signature="e#2#45#0" expanded="true" />
               </folding>
@@ -104,12 +107,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build_consolidated_database.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/build_consolidated_database.py">
+      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="460">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,12 +140,13 @@
         <option value="dbtable:/ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743/db_antonio_india.public.capital_table" />
         <option value="$PROJECT_DIR$/pydhs/Database.py" />
         <option value="$PROJECT_DIR$/tests/test_controller.py" />
-        <option value="$PROJECT_DIR$/pydhs/Controller.py" />
         <option value="$PROJECT_DIR$/scripts/convert_table_and_field_names_to_lowercase" />
         <option value="$PROJECT_DIR$/scripts/initialize_table_list.py" />
         <option value="$PROJECT_DIR$/scripts/prepare_database_for_processing" />
         <option value="$PROJECT_DIR$/scripts/build_consolidated_database" />
         <option value="$PROJECT_DIR$/scripts/build_consolidated_database.py" />
+        <option value="$PROJECT_DIR$/pydhs/Controller.py" />
+        <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
       </list>
     </option>
   </component>
@@ -254,6 +260,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_pydhs.py" />
     <property name="editor.config.accepted" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="last.edited.regexp" value="Sample Text" />
   </component>
   <component name="RunManager" selected="Python.initialize_table_list">
     <configuration default="false" name="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase" type="tests" factoryName="py.test" temporary="true">
@@ -779,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476834222037</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="building the build_consolidated_database.py script.">
+      <created>1476834657319</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1476834657319</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -866,7 +880,8 @@
     <MESSAGE value="added feature to add the table name to each table. So that is great. This should now propagate to the intersection of the table fields." />
     <MESSAGE value="added script to scripts folder for preparing database for generating the union and intersection tables." />
     <MESSAGE value="fixed the extension on the prepare_database_for_processing file.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the extension on the prepare_database_for_processing file.&#10;" />
+    <MESSAGE value="building the build_consolidated_database.py script." />
+    <option name="LAST_COMMIT_MESSAGE" value="building the build_consolidated_database.py script." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -918,7 +933,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/build_consolidated_database.py">
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -963,6 +978,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#351#369#0" expanded="true" />
+            <marker date="1476822631087" expanded="true" signature="4140:4196" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="4418:4466" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+            <marker date="1476822631087" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+            <marker date="1476822631087" expanded="true" signature="8394:8466" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="8687:8743" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="8687:8786" ph="SELECT colum... columns" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,6 +1119,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#351#369#0" expanded="true" />
+            <marker date="1476822631087" expanded="true" signature="4140:4196" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="4418:4466" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+            <marker date="1476822631087" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+            <marker date="1476822631087" expanded="true" signature="8394:8466" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="8687:8743" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="8687:8786" ph="SELECT colum... columns" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,19 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3864">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/python.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1235,6 +1261,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding>
+            <element signature="e#351#369#0" expanded="true" />
+            <marker date="1476822631087" expanded="true" signature="4140:4196" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="4418:4466" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+            <marker date="1476822631087" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+            <marker date="1476822631087" expanded="true" signature="8394:8466" ph="SELECT table... pg_tables" />
+            <marker date="1476822631087" expanded="true" signature="8687:8743" ph="SELECT colum... columns" />
+            <marker date="1476822631087" expanded="true" signature="8687:8786" ph="SELECT colum... columns" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,31 +1294,46 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/build_consolidated_database" />
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state relative-caret-position="1292">
+          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
-            <element signature="e#324#342#0" expanded="true" />
+            <element signature="e#143#156#0" expanded="true" />
+            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
+            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
+        <state relative-caret-position="648">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
           <folding>
             <element signature="e#2#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/build_consolidated_database.py">
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="73">
+          <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+          <folding>
+            <element signature="e#324#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -145,7 +145,7 @@ class Controller():
         self.conn_sqlalchemy._build_table_class(tablename, fields)
 
 
-    def action_insert_data_to_union_table(self, tablefile, destination_table):
+    def action_insert_data_to_table(self, tablefile, destination_table):
 
         ## First, update the table and field names in case of changes.
 
