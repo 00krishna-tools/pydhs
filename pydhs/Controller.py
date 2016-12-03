@@ -30,7 +30,7 @@ from psycopg2.extensions import AsIs
 
 ## Initialize Constants
 
-
+TABLENAMES = ["union_table", "intersection_table"]
 
 
 class Controller():
@@ -217,6 +217,110 @@ class Controller():
         self.db.set_all_field_names_to_lowercase()
 
 
+    def action_standardize_fields(self):
+
+        table_fields_list = []
+        for idx, tbl in enumerate(TABLENAMES):
+
+            table_fields_list.append(self.db.get_table_column_names(
+                tbl))
+
+
+        for idx, tbl in enumerate(TABLENAMES):
+
+            query_list = []
+
+            if ('b4',) in table_fields_list[idx]:
+                query_list.append("""update %s set b4 = lower(b4)""")
+
+            if ('v102',) in table_fields_list[idx]:
+                query_list.append("""update %s set v102 = lower(
+                v102)""")
+
+            if ('v190',) in table_fields_list[idx]:
+                query_list.append("""update %s set v190 = 'Lowest
+                quintile' where v190 = '1'""")
+
+                query_list.append("""update %s set v190 = 'Fourth
+                quintile' where v190 = '2'""")
+
+                query_list.append("""update %s set v190 = 'Middle
+                quintile' where v190 = '3'""")
+
+                query_list.append("""update %s set v190 = 'Second
+                quintile' where v190 = '4'""")
+
+                query_list.append("""update %s set v190 = 'Highest
+                quintile' where v190 = '5'""")
+
+                query_list.append("""update %s set v190 = 'Lowest
+                    quintile' where v190 = 'poorest'""")
+
+                query_list.append("""update %s set v190 = 'Fourth
+                    quintile' where v190 = 'poorer'""")
+
+                query_list.append("""update %s set v190 = 'Middle
+                    quintile' where v190 = 'middle'""")
+
+                query_list.append("""update %s set v190 = 'Second
+                    quintile' where v190 = 'richer'""")
+
+                query_list.append("""update %s set v190 = 'Highest
+                    quintile' where v190 = 'richest'""")
+
+            if ('v106',) in table_fields_list[idx]:
+
+                query_list.append("""update %s set v106 = 'no education' where
+                v106 = '0'""")
+
+                query_list.append("""update %s set v106 = 'primary' where v106 =
+                '1'""")
+
+                query_list.append("""update %s set v106 = 'secondary' where v106 =
+                '2'""")
+
+                query_list.append("""update %s set v106 = 'higher' where v106 =
+                '3'""")
+
+                query_list.append("""update %s set v106 = NULL where v106 = '9'""")
+
+                query_list.append("""update %s set v106 = lower(v106)""")
+
+            if ('b2',) in table_fields_list[idx]:
+
+                query_list.append("""update %s set b2 =  where
+                cast(b2 as NUMERIC) """)
+
+            for q in query_list:
+
+                self.db.get_regular_cursor_query_no_return(q, (AsIs(tbl), ))
+                print(q)
+
+            del(query_list)
+
+        # print(len(table_fields_list))
+        # print(table_fields_list[0])
+        # print(table_fields_list[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def get_intersection_of_setlist(self,setlist):
 
         return(set.intersection(*setlist))
@@ -225,5 +329,9 @@ class Controller():
     def get_union_of_setlist(self, setlist):
 
         return (set.union(*setlist))
+
+
+
+
 
 

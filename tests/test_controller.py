@@ -115,3 +115,12 @@ class TestController(object):
 
         c = Controller('db_antonio_india')
         c.action_add_table_name_to_each_database_table('tablelist2.csv')
+
+    def test_standardize_database_columns(self):
+        c = Controller('db_antonio_india')
+        c.action_standardize_fields()
+
+
+
+
+

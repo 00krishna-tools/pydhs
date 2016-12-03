@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="dbSrc:///ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$" dialect="GenericSQL" />
   </component>
 </project>
