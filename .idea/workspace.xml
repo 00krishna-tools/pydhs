@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/standardize_cleanup_vars.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_controller.py" afterPath="$PROJECT_DIR$/tests/test_controller.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +56,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-203">
@@ -82,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="433">
-              <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <caret line="120" column="37" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="37" />
               <folding>
                 <element signature="e#139#152#0" expanded="true" />
               </folding>
@@ -102,6 +99,30 @@
                 <marker date="1476822631087" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
                 <marker date="1476822631087" expanded="true" signature="8394:8466" ph="SELECT table... pg_tables" />
                 <marker date="1476822631087" expanded="true" signature="8687:8786" ph="SELECT colum... columns" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="standardize_cleanup_vars.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/standardize_cleanup_vars.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,6 +164,7 @@
         <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
         <option value="$PROJECT_DIR$/tests/test_controller.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
+        <option value="$PROJECT_DIR$/scripts/standardize_cleanup_vars.py" />
       </list>
     </option>
   </component>
@@ -789,7 +811,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477351512192</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="updated the standardization script.">
+      <created>1480738145412</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1480738145475</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -826,7 +855,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1035" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28877005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -835,7 +864,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973261" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -882,7 +911,8 @@
     <MESSAGE value="building the build_consolidated_database.py script." />
     <MESSAGE value="building the create_consolidated_database.py script." />
     <MESSAGE value="tested consolidated build script and it worked." />
-    <option name="LAST_COMMIT_MESSAGE" value="tested consolidated build script and it worked." />
+    <MESSAGE value="updated the standardization script." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the standardization script." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -891,23 +921,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="147" column="30" lean-forward="false" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
-          <folding>
-            <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3864">
@@ -1371,16 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -1433,16 +1436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <element signature="e#139#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-203">
@@ -1456,6 +1449,36 @@
             <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
             <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
             <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="120" column="37" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="37" />
+          <folding>
+            <element signature="e#139#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/standardize_cleanup_vars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
