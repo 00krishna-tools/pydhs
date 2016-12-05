@@ -284,13 +284,6 @@ class Controller():
 
                 query_list.append("""update %s set v106 = NULL where v106 = '9'""")
 
-                query_list.append("""update %s set v106 = lower(v106)""")
-
-            if ('b2',) in table_fields_list[idx]:
-
-                query_list.append("""update %s set b2 =  where
-                cast(b2 as NUMERIC) """)
-
             for q in query_list:
 
                 self.db.get_regular_cursor_query_no_return(q, (AsIs(tbl), ))
