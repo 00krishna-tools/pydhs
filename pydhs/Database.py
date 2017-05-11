@@ -224,9 +224,11 @@ class DatabasePsycopg2():
 
     def get_variables_by_table(self):
 
-        query = """SELECT table_catalog, table_schema, table_name, column_name, data_type, is_generated, is_updatable FROM information_schema.columns where table_schema = 'public';"""
+        vals = {'schemaname': 'public'}
 
-        return pd.read_sql_query(sa.text(query), self.conn)
+        query = """SELECT table_catalog, table_schema, table_name, column_name, data_type, is_generated, is_updatable FROM information_schema.columns where table_schema ='public'"""
+
+        return(pd.read_sql_query(query, self.conn))
 
     def set_connection_closed(self):
 

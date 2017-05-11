@@ -83,20 +83,20 @@
       <file leaf-file-name="Database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="228" column="59" lean-forward="false" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
+            <state relative-caret-position="249">
+              <caret line="230" column="50" lean-forward="false" selection-start-line="230" selection-start-column="50" selection-end-line="230" selection-end-column="50" />
               <folding>
                 <element signature="e#351#369#0" expanded="true" />
-                <marker date="1494545273997" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
-                <marker date="1494545273997" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
-                <marker date="1494545273997" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
-                <marker date="1494545273997" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
-                <marker date="1494545273997" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
-                <marker date="1494545273997" expanded="true" signature="6595:6744" ph="SELECT * FRO... information_schema" />
-                <marker date="1494545273997" expanded="true" signature="6595:6746" ph="SELECT * FRO... information_schema" />
-                <marker date="1494545273997" expanded="true" signature="6595:6755" ph="SELECT * FRO... information_schema" />
-                <marker date="1494545273997" expanded="true" signature="8845:8917" ph="SELECT table... pg_tables" />
-                <marker date="1494545273997" expanded="true" signature="9138:9237" ph="SELECT colum... columns" />
+                <marker date="1494546294572" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+                <marker date="1494546294572" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+                <marker date="1494546294572" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+                <marker date="1494546294572" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+                <marker date="1494546294572" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
+                <marker date="1494546294572" expanded="true" signature="6636:6785" ph="SELECT * FRO... information_schema" />
+                <marker date="1494546294572" expanded="true" signature="6636:6795" ph="SELECT table... columns" />
+                <marker date="1494546294572" expanded="true" signature="6636:11320" ph="SELECT table... columns" />
+                <marker date="1494546294572" expanded="true" signature="8876:8948" ph="SELECT table... pg_tables" />
+                <marker date="1494546294572" expanded="true" signature="9169:9268" ph="SELECT colum... columns" />
               </folding>
             </state>
           </provider>
@@ -140,6 +140,7 @@
       <find>drop</find>
       <find>get_regular_cursor_query_no_return</find>
       <find>pandas</find>
+      <find>pd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -906,7 +907,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494543397451</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added feature to get all variable names per table - fixed query function to return dataframe instead of list.">
+      <created>1494545302673</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1494545302673</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -943,14 +951,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1031" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29570553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -981,7 +988,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added Controller, Database, and DbTable classes. Setting up basic methods on the database for access. Also setting up controller to manage interaction between application state and database state.&#10;" />
     <MESSAGE value="giving more control of project knowledge and state to controller - so that database object can stay focused on access and not on info." />
     <MESSAGE value="configuring Controller to Database access objects. Test case for getting the column names for a table." />
     <MESSAGE value="Trying to get the query to work through psycopg2." />
@@ -1006,7 +1012,8 @@
     <MESSAGE value="added feature to get all variable names per table." />
     <MESSAGE value="added feature to get all variable names per table - fixed table name to information_schema.columns ." />
     <MESSAGE value="added feature to get all variable names per table - fixed query function to return type true." />
-    <option name="LAST_COMMIT_MESSAGE" value="added feature to get all variable names per table - fixed query function to return type true." />
+    <MESSAGE value="added feature to get all variable names per table - fixed query function to return dataframe instead of list." />
+    <option name="LAST_COMMIT_MESSAGE" value="added feature to get all variable names per table - fixed query function to return dataframe instead of list." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1348,7 +1355,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+          <folding>
+            <element signature="e#324#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/initialize_table_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -1356,7 +1373,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/initialize_table_list.py">
+    <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -1374,32 +1391,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding>
-            <element signature="e#324#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="228" column="59" lean-forward="false" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
+        <state relative-caret-position="249">
+          <caret line="230" column="50" lean-forward="false" selection-start-line="230" selection-start-column="50" selection-end-line="230" selection-end-column="50" />
           <folding>
             <element signature="e#351#369#0" expanded="true" />
-            <marker date="1494545273997" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
-            <marker date="1494545273997" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
-            <marker date="1494545273997" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
-            <marker date="1494545273997" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
-            <marker date="1494545273997" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
-            <marker date="1494545273997" expanded="true" signature="6595:6744" ph="SELECT * FRO... information_schema" />
-            <marker date="1494545273997" expanded="true" signature="6595:6746" ph="SELECT * FRO... information_schema" />
-            <marker date="1494545273997" expanded="true" signature="6595:6755" ph="SELECT * FRO... information_schema" />
-            <marker date="1494545273997" expanded="true" signature="8845:8917" ph="SELECT table... pg_tables" />
-            <marker date="1494545273997" expanded="true" signature="9138:9237" ph="SELECT colum... columns" />
+            <marker date="1494546294572" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+            <marker date="1494546294572" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+            <marker date="1494546294572" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+            <marker date="1494546294572" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+            <marker date="1494546294572" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
+            <marker date="1494546294572" expanded="true" signature="6636:6785" ph="SELECT * FRO... information_schema" />
+            <marker date="1494546294572" expanded="true" signature="6636:6795" ph="SELECT table... columns" />
+            <marker date="1494546294572" expanded="true" signature="6636:11320" ph="SELECT table... columns" />
+            <marker date="1494546294572" expanded="true" signature="8876:8948" ph="SELECT table... pg_tables" />
+            <marker date="1494546294572" expanded="true" signature="9169:9268" ph="SELECT colum... columns" />
           </folding>
         </state>
       </provider>
