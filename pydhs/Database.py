@@ -226,7 +226,7 @@ class DatabasePsycopg2():
 
         query = """SELECT table_catalog, table_schema, table_name, column_name, data_type, is_generated, is_updatable FROM information_schema.columns where table_schema = 'public';"""
 
-        return(self.get_regular_cursor_query_no_return(query))
+        return(self.get_regular_cursor_query(query))
 
     def set_connection_closed(self):
 
