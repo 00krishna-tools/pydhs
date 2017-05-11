@@ -22,4 +22,4 @@ def main(database, tablefile):
 
 if __name__ == "__main__":
     # execute only if run as a script
-    main('db_antonio_india', 'tablelist.csv')
+    main('db_dhs_global', 'tablelist.csv')

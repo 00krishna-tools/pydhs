@@ -217,11 +217,10 @@ class DatabasePsycopg2():
             print("not all table names were fixed. Try again.")
 
 
+    def check_existence_or_drop_query(self, tablename):
 
-
-
-
-
+        query = text('DROP TABLE IF EXISTS {};'.format(tablename))
+        self.get_regular_cursor_query_no_return(query)
 
 
 

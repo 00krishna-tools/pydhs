@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pydhs.iml" afterPath="$PROJECT_DIR$/.idea/pydhs.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Database.py" afterPath="$PROJECT_DIR$/pydhs/Database.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/create_consolidated_database.py" afterPath="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/initialize_table_list.py" afterPath="$PROJECT_DIR$/scripts/initialize_table_list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/prepare_database_for_processing.py" afterPath="$PROJECT_DIR$/scripts/prepare_database_for_processing.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,28 +22,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_table_from_union_of_columns.coverage" NAME="py.test in TestController and test_create_table_from_union_of_columns Coverage Results" MODIFIED="1476518873337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$create_consolidated_database.coverage" NAME="create_consolidated_database Coverage Results" MODIFIED="1477347890986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase Coverage Results" MODIFIED="1476821671027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_intersection_of_columns.coverage" NAME="py.test in TestController and test_intersection_of_columns Coverage Results" MODIFIED="1476513416613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$initialize_table_list.coverage" NAME="initialize_table_list Coverage Results" MODIFIED="1476833559556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_union_of_columns.coverage" NAME="py.test in TestController and test_union_of_columns Coverage Results" MODIFIED="1476516079521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_add_column_name_to_each_db_table.coverage" NAME="py.test in TestController and test_add_column_name_to_each_db_table Coverage Results" MODIFIED="1476832039376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestPydhs_and_test_sqlalchemy_connection.coverage" NAME="py.test in TestPydhs and test_sqlalchemy_connection Coverage Results" MODIFIED="1476517769112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestPydhs.coverage" NAME="py.test in TestPydhs Coverage Results" MODIFIED="1476507406219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_standardize_database_columns.coverage" NAME="py.test in TestController and test_standardize_database_columns Coverage Results" MODIFIED="1480724759930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$test_pydhs.coverage" NAME="test_pydhs Coverage Results" MODIFIED="1475092140667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase Coverage Results" MODIFIED="1476821691907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController.coverage" NAME="py.test in TestController Coverage Results" MODIFIED="1476509783260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_sqlalchemy_get_variables_from_each_table.coverage" NAME="py.test in TestController and test_sqlalchemy_get_variables_from_each_table Coverage Results" MODIFIED="1476512305857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors.coverage" NAME="py.test in Test_Database_Cursors Coverage Results" MODIFIED="1475094219702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_insert_data_into_master_table.coverage" NAME="py.test in TestController and test_insert_data_into_master_table Coverage Results" MODIFIED="1476825114106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_intersection_table.coverage" NAME="py.test in TestController and test_create_intersection_table Coverage Results" MODIFIED="1476588909389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_union_table.coverage" NAME="py.test in TestController and test_create_union_table Coverage Results" MODIFIED="1476591311288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_cursor.coverage" NAME="py.test in Test_Database_Cursors and test_cursor Coverage Results" MODIFIED="1475091229043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestPydhs_and_test_sqlalchemy_connection.coverage" NAME="py.test in TestPydhs and test_sqlalchemy_connection Coverage Results" MODIFIED="1476517769112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_table_from_union_of_columns.coverage" NAME="py.test in TestController and test_create_table_from_union_of_columns Coverage Results" MODIFIED="1476518873337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_add_column_name_to_each_db_table.coverage" NAME="py.test in TestController and test_add_column_name_to_each_db_table Coverage Results" MODIFIED="1476832039376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$initialize_table_list.coverage" NAME="initialize_table_list Coverage Results" MODIFIED="1476833559556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_sqlalchemy_create_table.coverage" NAME="py.test in Test_Database_Cursors and test_sqlalchemy_create_table Coverage Results" MODIFIED="1476585478281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/pydhs$pytest_dhs.coverage" NAME="pytest_dhs Coverage Results" MODIFIED="1475090975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestPydhs.coverage" NAME="py.test in TestPydhs Coverage Results" MODIFIED="1476507406219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController.coverage" NAME="py.test in TestController Coverage Results" MODIFIED="1476509783260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_standardize_database_columns.coverage" NAME="py.test in TestController and test_standardize_database_columns Coverage Results" MODIFIED="1480724759930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$test_controller.coverage" NAME="test_controller Coverage Results" MODIFIED="1476513128143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase Coverage Results" MODIFIED="1476821671027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_union_of_columns.coverage" NAME="py.test in TestController and test_union_of_columns Coverage Results" MODIFIED="1476516079521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$create_consolidated_database.coverage" NAME="create_consolidated_database Coverage Results" MODIFIED="1477347890986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors.coverage" NAME="py.test in Test_Database_Cursors Coverage Results" MODIFIED="1475094219702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase Coverage Results" MODIFIED="1476821691907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$pytest_dhs.coverage" NAME="pytest_dhs Coverage Results" MODIFIED="1475090975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_insert_data_into_master_table.coverage" NAME="py.test in TestController and test_insert_data_into_master_table Coverage Results" MODIFIED="1476825114106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_intersection_of_columns.coverage" NAME="py.test in TestController and test_intersection_of_columns Coverage Results" MODIFIED="1476513416613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_create_union_table.coverage" NAME="py.test in TestController and test_create_union_table Coverage Results" MODIFIED="1476591311288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_sqlalchemy_get_variables_from_each_table.coverage" NAME="py.test in TestController and test_sqlalchemy_get_variables_from_each_table Coverage Results" MODIFIED="1476512305857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_cursor.coverage" NAME="py.test in Test_Database_Cursors and test_cursor Coverage Results" MODIFIED="1475091229043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -55,32 +62,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-203">
-              <caret line="278" column="42" lean-forward="false" selection-start-line="278" selection-start-column="42" selection-end-line="278" selection-end-column="42" />
+            <state relative-caret-position="376">
+              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
-                <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-                <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-                <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-                <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-                <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-                <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-                <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="37" />
-              <folding>
-                <element signature="e#139#152#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,15 +77,16 @@
       <file leaf-file-name="Database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1568">
-              <caret line="205" column="55" lean-forward="false" selection-start-line="205" selection-start-column="31" selection-end-line="205" selection-end-column="55" />
+            <state relative-caret-position="466">
+              <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
-                <marker date="1476822631087" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
-                <marker date="1476822631087" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
-                <marker date="1476822631087" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
-                <marker date="1476822631087" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
-                <marker date="1476822631087" expanded="true" signature="8394:8466" ph="SELECT table... pg_tables" />
-                <marker date="1476822631087" expanded="true" signature="8687:8786" ph="SELECT colum... columns" />
+                <marker date="1494538564750" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+                <marker date="1494538564750" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+                <marker date="1494538564750" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+                <marker date="1494538564750" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+                <marker date="1494538564750" expanded="true" signature="6442:6463" ph="DROP TABLE I... " />
+                <marker date="1494538564750" expanded="true" signature="8568:8640" ph="SELECT table... pg_tables" />
+                <marker date="1494538564750" expanded="true" signature="8861:8960" ph="SELECT colum... columns" />
               </folding>
             </state>
           </provider>
@@ -106,20 +95,8 @@
       <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="standardize_cleanup_vars.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/standardize_cleanup_vars.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -142,6 +119,8 @@
       <find>%</find>
       <find>list</find>
       <find>get_regular_cursor_query</find>
+      <find>drop</find>
+      <find>get_regular_cursor_query_no_return</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,7 +133,6 @@
         <option value="$PROJECT_DIR$/pydhs/Database_Pandas.py" />
         <option value="$PROJECT_DIR$/tests/test_pydhs.py" />
         <option value="dbtable:/ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743/db_antonio_india.public.capital_table" />
-        <option value="$PROJECT_DIR$/pydhs/Database.py" />
         <option value="$PROJECT_DIR$/scripts/convert_table_and_field_names_to_lowercase" />
         <option value="$PROJECT_DIR$/scripts/initialize_table_list.py" />
         <option value="$PROJECT_DIR$/scripts/prepare_database_for_processing" />
@@ -162,8 +140,9 @@
         <option value="$PROJECT_DIR$/scripts/build_consolidated_database.py" />
         <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
         <option value="$PROJECT_DIR$/tests/test_controller.py" />
-        <option value="$PROJECT_DIR$/pydhs/Controller.py" />
         <option value="$PROJECT_DIR$/scripts/standardize_cleanup_vars.py" />
+        <option value="$PROJECT_DIR$/pydhs/Database.py" />
+        <option value="$PROJECT_DIR$/pydhs/Controller.py" />
       </list>
     </option>
   </component>
@@ -174,9 +153,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1035" />
+    <option name="width" value="1680" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -194,7 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,20 +229,31 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_pydhs.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/pPydhs/bin/python" />
     <property name="editor.config.accepted" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python tests.py.test in TestController and test_standardize_database_columns">
     <configuration default="false" name="py.test in TestController and test_insert_data_into_master_table" type="tests" factoryName="py.test" temporary="true">
@@ -290,6 +279,20 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_legacyInformationCopiedToNew" value="true" />
+      <option name="_new_target" value="&quot;tests.test_controller.TestController.test_insert_data_into_master_table&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="py.test in TestController and test_add_column_name_to_each_db_table" type="tests" factoryName="py.test" temporary="true">
@@ -315,6 +318,20 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_legacyInformationCopiedToNew" value="true" />
+      <option name="_new_target" value="&quot;tests.test_controller.TestController.test_add_column_name_to_each_db_table&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="initialize_table_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -333,6 +350,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/initialize_table_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="create_consolidated_database" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -351,6 +369,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="py.test in TestController and test_standardize_database_columns" type="tests" factoryName="py.test" temporary="true">
@@ -376,6 +395,20 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_legacyInformationCopiedToNew" value="true" />
+      <option name="_new_target" value="&quot;tests.test_controller.TestController.test_standardize_database_columns&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -396,6 +429,13 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -451,6 +491,7 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -480,26 +521,6 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pydhs" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -533,15 +554,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pydhs" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -555,16 +571,9 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pydhs" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -578,18 +587,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pydhs" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="pytest_dhs" type="tests" factoryName="py.test">
@@ -615,6 +616,20 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="false" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/py35_pydhs/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_legacyInformationCopiedToNew" value="true" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_pydhs.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <list size="6">
@@ -634,6 +649,26 @@
         <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestController and test_insert_data_into_master_table" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pydhs" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -860,26 +895,27 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1035" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1031" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28877005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29570553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973261" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39887005" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -932,12 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3864">
           <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,9 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
-          <folding>
-            <element signature="e#2#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,13 +1004,6 @@
           <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -992,12 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3864">
           <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,9 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="16" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="e#2#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,13 +1048,6 @@
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1052,12 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4025">
           <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,13 +1082,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1099,12 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="17" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,13 +1109,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1139,12 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="17" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1164,13 +1136,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1179,12 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="17" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,13 +1163,6 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1219,12 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="51" column="44" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,13 +1187,6 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1256,12 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,13 +1204,6 @@
           <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
           </folding>
         </state>
       </provider>
@@ -1286,31 +1212,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Database_Pandas.py" />
     <entry file="file://$PROJECT_DIR$/tests/tablelist.csv" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/assertion/rewrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/py/_path/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="663" column="0" lean-forward="false" selection-start-line="663" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/assertion/rewrite.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/py/_path/local.py" />
     <entry file="file://$PROJECT_DIR$/pydhs/DbTable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1336,21 +1244,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743/db_antonio_india.public.capital_table">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/ee9b0192/98d8992d-2eb3-489c-9010-256f3a0b2743/db_antonio_india.public.capital_table" />
     <entry file="file://$PROJECT_DIR$/scripts/build_consolidated_database" />
     <entry file="file://$PROJECT_DIR$/MANIFEST.in">
       <provider selected="true" editor-type-id="text-editor">
@@ -1377,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,9 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1395,84 +1285,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#156#0" expanded="true" />
-            <marker date="1476819574979" expanded="true" signature="2743:2746" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3296:3384" ph="select colum... columns" />
-            <marker date="1476819574979" expanded="true" signature="3629:3717" ph="select colum... columns" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/vendored_packages/pluggy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="723" column="0" lean-forward="false" selection-start-line="723" selection-start-column="0" selection-end-line="723" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="1414" column="0" lean-forward="false" selection-start-line="1414" selection-start-column="0" selection-end-line="1414" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1568">
-          <caret line="205" column="55" lean-forward="false" selection-start-line="205" selection-start-column="31" selection-end-line="205" selection-end-column="55" />
-          <folding>
-            <marker date="1476822631087" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
-            <marker date="1476822631087" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
-            <marker date="1476822631087" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
-            <marker date="1476822631087" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
-            <marker date="1476822631087" expanded="true" signature="8394:8466" ph="SELECT table... pg_tables" />
-            <marker date="1476822631087" expanded="true" signature="8687:8786" ph="SELECT colum... columns" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="278" column="42" lean-forward="false" selection-start-line="278" selection-start-column="42" selection-end-line="278" selection-end-column="42" />
-          <folding>
-            <element signature="e#324#342#0" expanded="true" />
-            <marker date="1480724758308" expanded="true" signature="6438:6466" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6561:6610" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6705:6775" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6819:6889" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="6933:7003" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7047:7117" ph="update union... " />
-            <marker date="1480724758308" expanded="true" signature="7161:7232" ph="update union... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/runner.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/vendored_packages/pluggy.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/py35_pydhs/lib/python3.5/site-packages/_pytest/python.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="789">
           <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="37" />
           <folding>
             <element signature="e#139#152#0" expanded="true" />
@@ -1482,10 +1303,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/standardize_cleanup_vars.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#1#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding>
+            <marker date="1494538564750" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+            <marker date="1494538564750" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+            <marker date="1494538564750" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+            <marker date="1494538564750" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+            <marker date="1494538564750" expanded="true" signature="6442:6463" ph="DROP TABLE I... " />
+            <marker date="1494538564750" expanded="true" signature="8568:8640" ph="SELECT table... pg_tables" />
+            <marker date="1494538564750" expanded="true" signature="8861:8960" ph="SELECT colum... columns" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#324#342#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -38,4 +38,4 @@ def main(database):
 
 if __name__ == "__main__":
     # execute only if run as a script
-    main('db_antonio_india')
+    main('db_dhs_global')

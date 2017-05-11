@@ -134,6 +134,10 @@ class Controller():
 
         # Note that there is a hard limit in postgres on 1600 columns in a table
 
+        fields.to_csv('unionVariableList.csv', header=True)
+
+        self.db.check_existence_or_drop_query(tablename)
+
         self.conn_sqlalchemy._build_table_class(tablename, fields[:1599])
 
     def action_build_intersection_fields_table(self, tablename, tablefile):
@@ -141,6 +145,9 @@ class Controller():
         fields = self.action_get_intersection_of_fields_across_database_tables(
             tablefile).sort_values('fields', ascending=True)
 
+        fields.to_csv('intersectionVariableList.csv', header=True)
+
+        self.db.check_existence_or_drop_query(tablename)
 
         self.conn_sqlalchemy._build_table_class(tablename, fields)
 
