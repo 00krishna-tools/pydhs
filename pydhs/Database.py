@@ -224,7 +224,7 @@ class DatabasePsycopg2():
 
     def get_variables_by_table(self):
 
-        query = """SELECT table_catalog, table_schema, table_name, column_name, data_type, is_generated, is_updatable FROM information_schema where table_schema = 'public';"""
+        query = """SELECT table_catalog, table_schema, table_name, column_name, data_type, is_generated, is_updatable FROM information_schema.columns where table_schema = 'public';"""
 
         return(self.get_regular_cursor_query_no_return(query))
 
