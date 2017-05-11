@@ -213,6 +213,9 @@ class Controller():
 
         return(0)
 
+    def action_get_variables_by_table_csv_file(self):
+
+        self.db.get_variables_by_table().to_csv('variablesByTable.csv')
 
     def action_set_table_names_to_lowercase(self):
 
@@ -298,9 +301,7 @@ class Controller():
 
             del(query_list)
 
-        # print(len(table_fields_list))
-        # print(table_fields_list[0])
-        # print(table_fields_list[1])
+
 
 
 
