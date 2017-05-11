@@ -59,7 +59,7 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="220">
               <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
@@ -83,19 +83,20 @@
       <file leaf-file-name="Database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="228" column="44" lean-forward="true" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="228" column="59" lean-forward="false" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
               <folding>
-                <marker date="1494543369538" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
-                <marker date="1494543369538" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
-                <marker date="1494543369538" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
-                <marker date="1494543369538" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
-                <marker date="1494543369538" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
-                <marker date="1494543369538" expanded="true" signature="6595:6744" ph="SELECT * FRO... information_schema" />
-                <marker date="1494543369538" expanded="true" signature="6595:6746" ph="SELECT * FRO... information_schema" />
-                <marker date="1494543369538" expanded="true" signature="6595:6755" ph="SELECT * FRO... information_schema" />
-                <marker date="1494543369538" expanded="true" signature="8838:8910" ph="SELECT table... pg_tables" />
-                <marker date="1494543369538" expanded="true" signature="9131:9230" ph="SELECT colum... columns" />
+                <element signature="e#351#369#0" expanded="true" />
+                <marker date="1494545273997" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+                <marker date="1494545273997" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+                <marker date="1494545273997" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+                <marker date="1494545273997" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+                <marker date="1494545273997" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
+                <marker date="1494545273997" expanded="true" signature="6595:6744" ph="SELECT * FRO... information_schema" />
+                <marker date="1494545273997" expanded="true" signature="6595:6746" ph="SELECT * FRO... information_schema" />
+                <marker date="1494545273997" expanded="true" signature="6595:6755" ph="SELECT * FRO... information_schema" />
+                <marker date="1494545273997" expanded="true" signature="8845:8917" ph="SELECT table... pg_tables" />
+                <marker date="1494545273997" expanded="true" signature="9138:9237" ph="SELECT colum... columns" />
               </folding>
             </state>
           </provider>
@@ -138,6 +139,7 @@
       <find>get_regular_cursor_query</find>
       <find>drop</find>
       <find>get_regular_cursor_query_no_return</find>
+      <find>pandas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -897,7 +899,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494543247212</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added feature to get all variable names per table - fixed query function to return type true.">
+      <created>1494543397451</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1494543397451</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -996,7 +1005,8 @@
     <MESSAGE value="updated functions to write csv of variables." />
     <MESSAGE value="added feature to get all variable names per table." />
     <MESSAGE value="added feature to get all variable names per table - fixed table name to information_schema.columns ." />
-    <option name="LAST_COMMIT_MESSAGE" value="added feature to get all variable names per table - fixed table name to information_schema.columns ." />
+    <MESSAGE value="added feature to get all variable names per table - fixed query function to return type true." />
+    <option name="LAST_COMMIT_MESSAGE" value="added feature to get all variable names per table - fixed query function to return type true." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1354,16 +1364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding>
-            <element signature="e#324#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1374,21 +1374,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+          <folding>
+            <element signature="e#324#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="228" column="44" lean-forward="true" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
+        <state relative-caret-position="306">
+          <caret line="228" column="59" lean-forward="false" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
           <folding>
-            <marker date="1494543369538" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
-            <marker date="1494543369538" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
-            <marker date="1494543369538" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
-            <marker date="1494543369538" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
-            <marker date="1494543369538" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
-            <marker date="1494543369538" expanded="true" signature="6595:6744" ph="SELECT * FRO... information_schema" />
-            <marker date="1494543369538" expanded="true" signature="6595:6746" ph="SELECT * FRO... information_schema" />
-            <marker date="1494543369538" expanded="true" signature="6595:6755" ph="SELECT * FRO... information_schema" />
-            <marker date="1494543369538" expanded="true" signature="8838:8910" ph="SELECT table... pg_tables" />
-            <marker date="1494543369538" expanded="true" signature="9131:9230" ph="SELECT colum... columns" />
+            <element signature="e#351#369#0" expanded="true" />
+            <marker date="1494545273997" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
+            <marker date="1494545273997" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
+            <marker date="1494545273997" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
+            <marker date="1494545273997" expanded="true" signature="5552:5948" ph="SELECT 'ALTE... columns" />
+            <marker date="1494545273997" expanded="true" signature="6437:6458" ph="DROP TABLE I... " />
+            <marker date="1494545273997" expanded="true" signature="6595:6744" ph="SELECT * FRO... information_schema" />
+            <marker date="1494545273997" expanded="true" signature="6595:6746" ph="SELECT * FRO... information_schema" />
+            <marker date="1494545273997" expanded="true" signature="6595:6755" ph="SELECT * FRO... information_schema" />
+            <marker date="1494545273997" expanded="true" signature="8845:8917" ph="SELECT table... pg_tables" />
+            <marker date="1494545273997" expanded="true" signature="9138:9237" ph="SELECT colum... columns" />
           </folding>
         </state>
       </provider>
