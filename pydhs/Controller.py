@@ -211,6 +211,10 @@ class Controller():
 
             self.db.get_regular_cursor_query_no_return(query, (tbl, AsIs(tbl)))
 
+        for tbl in tables['tablename']:
+            query2 = "UPDATE %s SET tablename = %s;"
+            self.db.get_regular_cursor_query_no_return(query2, (AsIs(tbl), str(tbl)))
+
         return(0)
 
     def action_get_variables_by_table_csv_file(self):
