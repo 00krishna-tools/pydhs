@@ -305,24 +305,44 @@ class Controller():
 
             del(query_list)
 
+    def action_add_wealth_id_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN whhid text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wwhid already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
 
+        self.db.get_regular_cursor_query_no_return(query)
 
+    def action_add_wealth_wlthindf_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wlthindf text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wlthindf already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
 
+        self.db.get_regular_cursor_query_no_return(query)
 
+    def action_add_wealth_wlthind5_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wlthind5 text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wlthind5 already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        self.db.get_regular_cursor_query_no_return(query)
 
 
 

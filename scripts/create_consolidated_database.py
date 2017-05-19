@@ -19,7 +19,9 @@ def main(database, tablefile):
     #c.action_insert_data_to_table(tablefile, 'union_table')
 
     c.action_insert_data_to_table(tablefile, 'intersection_table')
-
+    c.action_add_wealth_id_column_to_intersection_table()
+    c.action_add_wealth_wlthindf_column_to_intersection_table()
+    c.action_add_wealth_wlthind5_column_to_intersection_table()
 
 
 if __name__ == "__main__":
