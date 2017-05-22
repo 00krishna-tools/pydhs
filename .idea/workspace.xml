@@ -58,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="307" column="0" lean-forward="true" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="57" />
+            <state relative-caret-position="867">
+              <caret line="346" column="14" lean-forward="false" selection-start-line="346" selection-start-column="14" selection-end-line="346" selection-end-column="14" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
               </folding>
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -914,7 +914,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495060211592</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added functions to create the wealth file columns in the database.">
+      <created>1495234223318</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1495234223318</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -989,7 +996,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trying to get the query to work through psycopg2." />
     <MESSAGE value="Got the query problems resolved. Working on building the functionality to get all table and column names, and then intersect them." />
     <MESSAGE value="Added a lot to the Database class to allow for a simultaneous connection from psycopg2 and sqlalchemy for pandas. That way I can run queries and also write tables." />
     <MESSAGE value="Working on getting the psycopg2 module to work properly. it seems to not be very consistent." />
@@ -1014,7 +1020,8 @@
     <MESSAGE value="added feature to get all variable names per table - fixed query function to return dataframe instead of list." />
     <MESSAGE value="added feature to get all variable names per table - got query fixed to get all vars." />
     <MESSAGE value="fixed the function to create the tablename and then fill it with the tablename." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the function to create the tablename and then fill it with the tablename." />
+    <MESSAGE value="added functions to create the wealth file columns in the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="added functions to create the wealth file columns in the database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1369,22 +1376,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="307" column="0" lean-forward="true" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="57" />
+        <state relative-caret-position="400">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#324#342#0" expanded="true" />
+            <element signature="e#1#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        <state relative-caret-position="867">
+          <caret line="346" column="14" lean-forward="false" selection-start-line="346" selection-start-column="14" selection-end-line="346" selection-end-column="14" />
           <folding>
-            <element signature="e#1#44#0" expanded="true" />
+            <element signature="e#324#342#0" expanded="true" />
           </folding>
         </state>
       </provider>

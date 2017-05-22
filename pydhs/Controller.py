@@ -344,7 +344,31 @@ class Controller():
 
         self.db.get_regular_cursor_query_no_return(query)
 
+    def action_add_wealth_v002_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wv002 text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wv002 already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
 
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_add_wealth_v003_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wv003 text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wv003 already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
+
+        self.db.get_regular_cursor_query_no_return(query)
 
     def get_intersection_of_setlist(self,setlist):
 
