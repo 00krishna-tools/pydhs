@@ -381,7 +381,7 @@ class Controller():
 
     def action_rename_intersection_table(self, tablename):
 
-        query = "ALTER TABLE IF EXISTS intersection_table RENAME TO %s;"
+        query = "ALTER TABLE IF EXISTS intersection_table RENAME TO {};"
 
         self.db.get_regular_cursor_query_no_return(query.format(sql.Identifier(tablename)))
 

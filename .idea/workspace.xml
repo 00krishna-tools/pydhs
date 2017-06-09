@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,10 +60,9 @@
       <file leaf-file-name="Database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+            <state relative-caret-position="360">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
-                <element signature="e#351#369#0" expanded="true" />
                 <marker date="1494546294572" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
                 <marker date="1494546294572" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
                 <marker date="1494546294572" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
@@ -77,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+            <state relative-caret-position="560">
+              <caret line="28" column="66" lean-forward="false" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -111,15 +111,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="384" column="76" lean-forward="true" selection-start-line="384" selection-start-column="76" selection-end-line="384" selection-end-column="76" />
+            <state relative-caret-position="340">
+              <caret line="383" column="70" lean-forward="false" selection-start-line="383" selection-start-column="70" selection-end-line="383" selection-end-column="70" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
-                <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-                <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+                <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+                <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+                <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
               </folding>
             </state>
           </provider>
@@ -165,9 +166,9 @@
         <option value="$PROJECT_DIR$/scripts/build_consolidated_database.py" />
         <option value="$PROJECT_DIR$/tests/test_controller.py" />
         <option value="$PROJECT_DIR$/scripts/standardize_cleanup_vars.py" />
+        <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
         <option value="$PROJECT_DIR$/pydhs/Database.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
-        <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
       </list>
     </option>
   </component>
@@ -935,7 +936,21 @@
       <option name="project" value="LOCAL" />
       <updated>1496973985555</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="restructuring create_consolidated_database.py script to build both the wealth and birth tables separately. &#10;&#10;Now I have to test it.">
+      <created>1496973997763</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1496973997763</updated>
+    </task>
+    <task id="LOCAL-00037" summary="changing table renaming routine to define name as sql identifier to pass without quotes.">
+      <created>1496975558594</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1496975558594</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1010,7 +1025,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on getting the psycopg2 module to work properly. it seems to not be very consistent." />
     <MESSAGE value="major changes to the database modules. But it is working. reorganized test cases. separate database objects into 3 different types of objects." />
     <MESSAGE value="have the sqlalchemy interfaces to the database working as well as pulling data back into pandas. So that is great." />
     <MESSAGE value="set up functions in controller to get all tables and fields from each table.&#10;" />
@@ -1035,7 +1049,8 @@
     <MESSAGE value="added functions to create the wealth file columns in the database." />
     <MESSAGE value="added functions to all wealth v002 and v003 columns to intersection table. This will allow me to check the results to see if they make sense." />
     <MESSAGE value="restructuring create_consolidated_database.py script to build both the wealth and birth tables separately. &#10;&#10;Now I have to test it." />
-    <option name="LAST_COMMIT_MESSAGE" value="restructuring create_consolidated_database.py script to build both the wealth and birth tables separately. &#10;&#10;Now I have to test it." />
+    <MESSAGE value="changing table renaming routine to define name as sql identifier to pass without quotes." />
+    <option name="LAST_COMMIT_MESSAGE" value="changing table renaming routine to define name as sql identifier to pass without quotes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1081,8 +1096,9 @@
           <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1124,8 +1140,9 @@
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1157,8 +1174,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1183,8 +1201,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1209,8 +1228,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1235,8 +1255,9 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1261,8 +1282,9 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1280,8 +1302,9 @@
           <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1369,14 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/initialize_table_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1387,12 +1402,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="66" lean-forward="false" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/initialize_table_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
-            <element signature="e#351#369#0" expanded="true" />
             <marker date="1494546294572" expanded="true" signature="4140:4233" ph="SELECT colum... columns" />
             <marker date="1494546294572" expanded="true" signature="4418:4504" ph="SELECT table... pg_tables" />
             <marker date="1494546294572" expanded="true" signature="4720:5070" ph="SELECT 'ALTE... tables" />
@@ -1408,22 +1440,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="384" column="76" lean-forward="true" selection-start-line="384" selection-start-column="76" selection-end-line="384" selection-end-column="76" />
+        <state relative-caret-position="340">
+          <caret line="383" column="70" lean-forward="false" selection-start-line="383" selection-start-column="70" selection-end-line="383" selection-end-column="70" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
-            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
+            <marker date="1496975761115" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12076" ph="ALTER TABLE IF... " />
+            <marker date="1496975761115" expanded="true" signature="12025:12078" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
