@@ -19,6 +19,7 @@ import datetime
 import psycopg2 as pg
 #import pydhs.DbTable as DTable
 import psycopg2
+from psycopg2 import sql
 from pydhs.Database import DatabasePsycopg2
 from pydhs.Database import DatabaseSqlalchemy
 import sqlalchemy
@@ -382,8 +383,7 @@ class Controller():
 
         query = "ALTER TABLE IF EXISTS intersection_table RENAME TO %s;"
 
-        self.db.get_regular_cursor_query_no_return(query, (AsIs(tablename)))
-
+        self.db.get_regular_cursor_query_no_return(query.format(sql.Identifier(tablename)))
 
     def get_intersection_of_setlist(self,setlist):
 
