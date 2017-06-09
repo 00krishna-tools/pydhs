@@ -58,22 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="346" column="14" lean-forward="false" selection-start-line="346" selection-start-column="14" selection-end-line="346" selection-end-column="14" />
-              <folding>
-                <element signature="e#324#342#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="-51">
               <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
               <folding>
                 <element signature="e#351#369#0" expanded="true" />
@@ -91,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -120,6 +108,20 @@
               <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding>
                 <element signature="e#2#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="384" column="76" lean-forward="true" selection-start-line="384" selection-start-column="76" selection-end-line="384" selection-end-column="76" />
+              <folding>
+                <element signature="e#324#342#0" expanded="true" />
+                <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+                <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
               </folding>
             </state>
           </provider>
@@ -254,8 +256,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -921,7 +923,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495234223318</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added functions to all wealth v002 and v003 columns to intersection table. This will allow me to check the results to see if they make sense.">
+      <created>1495420487387</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1495420487388</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -960,17 +969,17 @@
     <frame x="1680" y="0" width="1680" height="1031" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2993865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2993865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25276074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2582822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39887005" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -996,7 +1005,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Got the query problems resolved. Working on building the functionality to get all table and column names, and then intersect them." />
     <MESSAGE value="Added a lot to the Database class to allow for a simultaneous connection from psycopg2 and sqlalchemy for pandas. That way I can run queries and also write tables." />
     <MESSAGE value="Working on getting the psycopg2 module to work properly. it seems to not be very consistent." />
     <MESSAGE value="major changes to the database modules. But it is working. reorganized test cases. separate database objects into 3 different types of objects." />
@@ -1021,7 +1029,8 @@
     <MESSAGE value="added feature to get all variable names per table - got query fixed to get all vars." />
     <MESSAGE value="fixed the function to create the tablename and then fill it with the tablename." />
     <MESSAGE value="added functions to create the wealth file columns in the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="added functions to create the wealth file columns in the database." />
+    <MESSAGE value="added functions to all wealth v002 and v003 columns to intersection table. This will allow me to check the results to see if they make sense." />
+    <option name="LAST_COMMIT_MESSAGE" value="added functions to all wealth v002 and v003 columns to intersection table. This will allow me to check the results to see if they make sense." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1067,6 +1076,8 @@
           <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1108,6 +1119,8 @@
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1139,6 +1152,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1163,6 +1178,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1187,6 +1204,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1211,6 +1230,8 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1235,6 +1256,8 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1252,6 +1275,8 @@
           <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1347,9 +1372,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="-51">
           <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
           <folding>
             <element signature="e#351#369#0" expanded="true" />
@@ -1366,32 +1401,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="349">
+          <caret line="384" column="76" lean-forward="true" selection-start-line="384" selection-start-column="76" selection-end-line="384" selection-end-column="76" />
           <folding>
-            <element signature="e#2#45#0" expanded="true" />
+            <element signature="e#324#342#0" expanded="true" />
+            <marker date="1496973759425" expanded="true" signature="11700:11858" ph="UPDATE inter... " />
+            <marker date="1496973759425" expanded="true" signature="12000:12053" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
           <folding>
             <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="346" column="14" lean-forward="false" selection-start-line="346" selection-start-column="14" selection-end-line="346" selection-end-column="14" />
-          <folding>
-            <element signature="e#324#342#0" expanded="true" />
           </folding>
         </state>
       </provider>

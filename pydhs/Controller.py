@@ -370,6 +370,21 @@ class Controller():
 
         self.db.get_regular_cursor_query_no_return(query)
 
+    def action_separate_whhid_to_cluster_and_household_id(self):
+
+        query = """UPDATE intersection_table 
+       SET wv002 = (regexp_split_to_array(BTRIM(whhid), '\s+'))[1], 
+       wv003 = (regexp_split_to_array(BTRIM(whhid), '\s+'))[2];"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_rename_intersection_table(self, tablename):
+
+        query = "ALTER TABLE IF EXISTS intersection_table RENAME TO %s;"
+
+        self.db.get_regular_cursor_query_no_return(query, (AsIs(tablename)))
+
+
     def get_intersection_of_setlist(self,setlist):
 
         return(set.intersection(*setlist))
@@ -378,6 +393,7 @@ class Controller():
     def get_union_of_setlist(self, setlist):
 
         return (set.union(*setlist))
+
 
 
 
