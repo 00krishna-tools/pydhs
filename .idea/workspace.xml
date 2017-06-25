@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,8 +114,8 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="388" column="0" lean-forward="true" selection-start-line="388" selection-start-column="0" selection-end-line="388" selection-end-column="0" />
+            <state relative-caret-position="740">
+              <caret line="400" column="0" lean-forward="true" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
                 <marker date="1496976887180" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
@@ -958,7 +957,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496975773936</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="changing table renaming routine to define name as sql identifier to pass without quotes.">
+      <created>1496976922516</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1496976922516</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1441,8 +1447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="388" column="0" lean-forward="true" selection-start-line="388" selection-start-column="0" selection-end-line="388" selection-end-column="0" />
+        <state relative-caret-position="740">
+          <caret line="400" column="0" lean-forward="true" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
             <marker date="1496976887180" expanded="true" signature="11725:11883" ph="UPDATE inter... " />
