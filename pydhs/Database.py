@@ -57,7 +57,7 @@ class DatabasePsycopg2():
                  username,
                  password,
                  hostname = 'localhost',
-                 portnumber = 5432):
+                 portnumber = 5433):
 
 
     ## Setup psycopg2 database connection.
@@ -87,7 +87,7 @@ class DatabasePsycopg2():
                                              username,
                                              password,
                                              hostname = 'localhost',
-                                             portnumber = 5432):
+                                             portnumber = 5433):
 
         try:
 
@@ -263,7 +263,7 @@ class DatabaseSqlalchemy():
                  username,
                  password,
                  hostname = 'localhost',
-                 portnumber = 5432):
+                 portnumber = 5433):
 
 
     ## Setup psycopg2 database connection.
@@ -359,7 +359,7 @@ class DatabaseAsyncpg():
                  username,
                  password,
                  hostname = 'localhost',
-                 portnumber = 5432):
+                 portnumber = 5433):
 
 
     ## Setup psycopg2 database connection.
@@ -376,7 +376,7 @@ class DatabaseAsyncpg():
                                              username,
                                              password,
                                              hostname='localhost',
-                                             portnumber=5432):
+                                             portnumber=5433):
         try:
 
             connection_string = "dbname=%s user=%s host=%s password=%s " \

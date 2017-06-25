@@ -49,14 +49,14 @@ class Controller():
                                     'krishnab',
                                     '3kl4vx71',
                                     'localhost',
-                                    5432)
+                                    5433)
 
 
         self.conn_sqlalchemy = DatabaseSqlalchemy(dbname,
                                                   'krishnab',
                                                   '3kl4vx71',
                                                   'localhost',
-                                                  5432)
+                                                  5433)
 
         self.database_table_fields = {}
 
@@ -65,18 +65,7 @@ class Controller():
         return(self.db.get_table_columns_dict(tablename))
 
 
-    def action_write_table_list_to_csv(self):
 
-
-
-        ## This function will create a dictionary of all column names in the
-        # database and then intersect them and union them.
-
-
-        # Get list of tables to iterate over
-
-        table_list = self.conn_sqlalchemy.get_table_list_as_dataframe('public')
-        table_list.to_csv('tablelist.csv')
 
 
 
@@ -128,6 +117,21 @@ class Controller():
         return(union_columns)
 
 
+    def action_get_dataframe_of_variables_to_add_to_tables(self, variablefile):
+
+        variables = pd.read_csv('variable_lists/added_variables_birth_table.csv')
+
+        return(variables)
+
+    def get_intersection_of_setlist(self,setlist):
+
+        return(set.intersection(*setlist))
+
+
+    def get_union_of_setlist(self, setlist):
+
+        return (set.union(*setlist))
+
     def action_build_union_fields_table(self, tablename,tablefile):
 
         fields = self.action_get_union_of_fields_across_database_tables(
@@ -135,7 +139,7 @@ class Controller():
 
         # Note that there is a hard limit in postgres on 1600 columns in a table
 
-        fields.to_csv('unionVariableList.csv', header=True)
+        fields.to_csv('variable_lists/unionVariableList.csv', header=True)
 
         self.db.check_existence_or_drop_query(tablename)
 
@@ -146,7 +150,7 @@ class Controller():
         fields = self.action_get_intersection_of_fields_across_database_tables(
             tablefile).sort_values('fields', ascending=True)
 
-        fields.to_csv('intersectionVariableList.csv', header=True)
+        fields.to_csv('variable_lists/intersectionVariableList.csv', header=True)
 
         self.db.check_existence_or_drop_query(tablename)
 
@@ -220,7 +224,7 @@ class Controller():
 
     def action_get_variables_by_table_csv_file(self):
 
-        self.db.get_variables_by_table().to_csv('variablesByTable.csv')
+        self.db.get_variables_by_table().to_csv('variable_list/variablesByTable.csv')
 
     def action_set_table_names_to_lowercase(self):
 
@@ -306,6 +310,19 @@ class Controller():
 
             del(query_list)
 
+    def add_list_of_variables_to_all_tables(self, tablefile):
+
+        vars = self.action_get_dataframe_of_variables_to_add_to_tables()
+
+        tables = pd.read_csv(tablefile)
+
+        query = "ALTER TABLE IF EXISTS %s add column if not exists %s text;"
+
+        for tbl in tables:
+            for var in vars:
+                self.db.get_regular_cursor_query_no_return(query, (AsIs(tbl), AsIs(var),))
+
+
     def action_add_wealth_id_column_to_intersection_table(self):
         query = """DO $$ 
                 BEGIN
@@ -385,15 +402,19 @@ class Controller():
 
         self.db.get_regular_cursor_query_no_return(query, (AsIs(tablename),))
 
-    def get_intersection_of_setlist(self,setlist):
 
-        return(set.intersection(*setlist))
+    def action_write_table_list_to_csv(self):
 
 
-    def get_union_of_setlist(self, setlist):
 
-        return (set.union(*setlist))
+        ## This function will create a dictionary of all column names in the
+        # database and then intersect them and union them.
 
+
+        # Get list of tables to iterate over
+
+        table_list = self.conn_sqlalchemy.get_table_list_as_dataframe('public')
+        table_list.to_csv('tablelist.csv')
 
 
 
