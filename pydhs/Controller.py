@@ -65,8 +65,136 @@ class Controller():
         return(self.db.get_table_columns_dict(tablename))
 
 
+    def action_add_table_name_to_each_database_table(self, tablefile):
+
+        tables = pd.read_csv(tablefile)
+
+        for tbl in tables['tablename']:
+
+            query = """DO
+            $$
+            BEGIN
+            IF not EXISTS (SELECT column_name
+                           FROM information_schema.columns
+                           WHERE table_schema='public' and table_name=%s and
+                           column_name='tablename') THEN
+            alter table %s add column tablename varchar default null ;
+            else
+            raise NOTICE 'Already exists';
+            END IF;
+            END
+            $$"""
+
+            self.db.get_regular_cursor_query_no_return(query, (tbl, AsIs(tbl)))
+
+        for tbl in tables['tablename']:
+            query2 = "UPDATE %s SET tablename = %s;"
+            self.db.get_regular_cursor_query_no_return(query2, (AsIs(tbl), str(tbl)))
+
+        return(0)
+
+    def action_add_list_of_variables_to_all_tables(self, tablefile):
+
+        vars = self.action_get_dataframe_of_variables_to_add_to_tables()
+
+        tables = pd.read_csv(tablefile)
+
+        query = "ALTER TABLE IF EXISTS %s add column if not exists %s text;"
+
+        for tbl in tables:
+            for var in vars:
+                self.db.get_regular_cursor_query_no_return(query, (AsIs(tbl), AsIs(var),))
 
 
+    def action_add_wealth_id_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN whhid text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wwhid already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_add_wealth_wlthindf_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wlthindf text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wlthindf already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_add_wealth_wlthind5_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wlthind5 text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wlthind5 already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_add_wealth_v002_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wv002 text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wv002 already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_add_wealth_v003_column_to_intersection_table(self):
+        query = """DO $$ 
+                BEGIN
+                    BEGIN
+                        ALTER TABLE intersection_table ADD COLUMN wv003 text;
+                    EXCEPTION
+                        WHEN duplicate_column THEN RAISE NOTICE 'column wv003 already exists in intersection_table.';
+                    END;
+                END;
+            $$"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+
+    def action_build_union_fields_table(self, tablename,tablefile):
+
+        fields = self.action_get_union_of_fields_across_database_tables(
+            tablefile).sort_values('fields', ascending=True)
+
+        # Note that there is a hard limit in postgres on 1600 columns in a table
+
+        fields.to_csv('variable_lists/unionVariableList.csv', header=True)
+
+        self.db.check_existence_or_drop_query(tablename)
+
+        self.conn_sqlalchemy._build_table_class(tablename, fields[:1599])
+
+    def action_build_intersection_fields_table(self, tablename, tablefile):
+
+        fields = self.action_get_intersection_of_fields_across_database_tables(
+            tablefile).sort_values('fields', ascending=True)
+
+        fields.to_csv('variable_lists/intersectionVariableList.csv', header=True)
+
+        self.db.check_existence_or_drop_query(tablename)
+
+        self.conn_sqlalchemy._build_table_class(tablename, fields)
 
 
     def action_get_variable_names_for_each_table_in_database(self, tablefile):
@@ -123,6 +251,12 @@ class Controller():
 
         return(variables)
 
+
+    def action_get_variables_by_table_csv_file(self):
+
+        self.db.get_variables_by_table().to_csv('variable_lists/variablesByTable.csv')
+
+
     def get_intersection_of_setlist(self,setlist):
 
         return(set.intersection(*setlist))
@@ -131,30 +265,6 @@ class Controller():
     def get_union_of_setlist(self, setlist):
 
         return (set.union(*setlist))
-
-    def action_build_union_fields_table(self, tablename,tablefile):
-
-        fields = self.action_get_union_of_fields_across_database_tables(
-            tablefile).sort_values('fields', ascending=True)
-
-        # Note that there is a hard limit in postgres on 1600 columns in a table
-
-        fields.to_csv('variable_lists/unionVariableList.csv', header=True)
-
-        self.db.check_existence_or_drop_query(tablename)
-
-        self.conn_sqlalchemy._build_table_class(tablename, fields[:1599])
-
-    def action_build_intersection_fields_table(self, tablename, tablefile):
-
-        fields = self.action_get_intersection_of_fields_across_database_tables(
-            tablefile).sort_values('fields', ascending=True)
-
-        fields.to_csv('variable_lists/intersectionVariableList.csv', header=True)
-
-        self.db.check_existence_or_drop_query(tablename)
-
-        self.conn_sqlalchemy._build_table_class(tablename, fields)
 
 
     def action_insert_data_to_table(self, tablefile, destination_table):
@@ -194,37 +304,26 @@ class Controller():
             self.db.get_regular_cursor_query_no_return(q)
 
 
-    def action_add_table_name_to_each_database_table(self, tablefile):
+    def action_merge_wealth_data_into_birth_table(self):
 
-        tables = pd.read_csv(tablefile)
+        query = """UPDATE
+	                    intersection_table_birth
+                   SET
+	                    whhid = intersection_table_wealth.whhid,
+	                    wlthindf = trim(intersection_table_wealth.wlthindf),
+	                    wlthind5 = trim(intersection_table_wealth.wlthind5)
+                   FROM
+	                    intersection_table_wealth
+                   WHERE
+	                    new_whhid = intersection_table_wealth.whhid
+                   AND
+	                    substring(trim(intersection_table_birth.tablename),0,3) = substring(trim(intersection_table_wealth.tablename), 0, 3)
+                   AND
+	                    substring(trim(intersection_table_birth.tablename),5,1) = substring(trim(intersection_table_wealth.tablename), 5, 1);
+                """
 
-        for tbl in tables['tablename']:
+        self.db.get_regular_cursor_query_no_return(query)
 
-            query = """DO
-            $$
-            BEGIN
-            IF not EXISTS (SELECT column_name
-                           FROM information_schema.columns
-                           WHERE table_schema='public' and table_name=%s and
-                           column_name='tablename') THEN
-            alter table %s add column tablename varchar default null ;
-            else
-            raise NOTICE 'Already exists';
-            END IF;
-            END
-            $$"""
-
-            self.db.get_regular_cursor_query_no_return(query, (tbl, AsIs(tbl)))
-
-        for tbl in tables['tablename']:
-            query2 = "UPDATE %s SET tablename = %s;"
-            self.db.get_regular_cursor_query_no_return(query2, (AsIs(tbl), str(tbl)))
-
-        return(0)
-
-    def action_get_variables_by_table_csv_file(self):
-
-        self.db.get_variables_by_table().to_csv('variable_list/variablesByTable.csv')
 
     def action_set_table_names_to_lowercase(self):
 
@@ -310,83 +409,6 @@ class Controller():
 
             del(query_list)
 
-    def add_list_of_variables_to_all_tables(self, tablefile):
-
-        vars = self.action_get_dataframe_of_variables_to_add_to_tables()
-
-        tables = pd.read_csv(tablefile)
-
-        query = "ALTER TABLE IF EXISTS %s add column if not exists %s text;"
-
-        for tbl in tables:
-            for var in vars:
-                self.db.get_regular_cursor_query_no_return(query, (AsIs(tbl), AsIs(var),))
-
-
-    def action_add_wealth_id_column_to_intersection_table(self):
-        query = """DO $$ 
-                BEGIN
-                    BEGIN
-                        ALTER TABLE intersection_table ADD COLUMN whhid text;
-                    EXCEPTION
-                        WHEN duplicate_column THEN RAISE NOTICE 'column wwhid already exists in intersection_table.';
-                    END;
-                END;
-            $$"""
-
-        self.db.get_regular_cursor_query_no_return(query)
-
-    def action_add_wealth_wlthindf_column_to_intersection_table(self):
-        query = """DO $$ 
-                BEGIN
-                    BEGIN
-                        ALTER TABLE intersection_table ADD COLUMN wlthindf text;
-                    EXCEPTION
-                        WHEN duplicate_column THEN RAISE NOTICE 'column wlthindf already exists in intersection_table.';
-                    END;
-                END;
-            $$"""
-
-        self.db.get_regular_cursor_query_no_return(query)
-
-    def action_add_wealth_wlthind5_column_to_intersection_table(self):
-        query = """DO $$ 
-                BEGIN
-                    BEGIN
-                        ALTER TABLE intersection_table ADD COLUMN wlthind5 text;
-                    EXCEPTION
-                        WHEN duplicate_column THEN RAISE NOTICE 'column wlthind5 already exists in intersection_table.';
-                    END;
-                END;
-            $$"""
-
-        self.db.get_regular_cursor_query_no_return(query)
-
-    def action_add_wealth_v002_column_to_intersection_table(self):
-        query = """DO $$ 
-                BEGIN
-                    BEGIN
-                        ALTER TABLE intersection_table ADD COLUMN wv002 text;
-                    EXCEPTION
-                        WHEN duplicate_column THEN RAISE NOTICE 'column wv002 already exists in intersection_table.';
-                    END;
-                END;
-            $$"""
-
-        self.db.get_regular_cursor_query_no_return(query)
-
-    def action_add_wealth_v003_column_to_intersection_table(self):
-        query = """DO $$ 
-                BEGIN
-                    BEGIN
-                        ALTER TABLE intersection_table ADD COLUMN wv003 text;
-                    EXCEPTION
-                        WHEN duplicate_column THEN RAISE NOTICE 'column wv003 already exists in intersection_table.';
-                    END;
-                END;
-            $$"""
-
-        self.db.get_regular_cursor_query_no_return(query)
 
     def action_separate_whhid_to_cluster_and_household_id(self):
 

@@ -20,7 +20,9 @@ def main(database, tablefile):
 
     c.action_set_field_names_to_lowercase()
 
+def main_births(database, tablefile):
 
+    c.add_list_of_variables_to_all_tables(tablefile)
 
 
 
@@ -29,4 +31,5 @@ def main(database, tablefile):
 
 if __name__ == "__main__":
     # execute only if run as a script
-    main('db_dhs_global', 'tablelists/tablelist.csv')
+    main('db_dhs_global', 'tablelists/tablelist_all.csv')
+    main_births('db_dhs_global', 'tablelists/tablelist_br.csv')
