@@ -93,9 +93,9 @@ class Controller():
 
         return(0)
 
-    def action_add_list_of_variables_to_all_tables(self, tablefile):
+    def action_add_list_of_variables_to_all_tables(self, tablefile, variablefile):
 
-        vars = self.action_get_dataframe_of_variables_to_add_to_tables()
+        vars = pd.read_csv(variablefile)
 
         tables = pd.read_csv(tablefile)
 
@@ -243,13 +243,6 @@ class Controller():
         union_columns.columns = ['fields']
         print(union_columns['fields'])
         return(union_columns)
-
-
-    def action_get_dataframe_of_variables_to_add_to_tables(self, variablefile):
-
-        variables = pd.read_csv('variable_lists/added_variables_birth_table.csv')
-
-        return(variables)
 
 
     def action_get_variables_by_table_csv_file(self):
