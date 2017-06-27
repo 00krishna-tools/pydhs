@@ -24,7 +24,7 @@ def main_births(database, tablefile):
 
     c = Controller(database)
 
-    c.add_list_of_variables_to_all_tables(tablefile)
+    c.action_add_list_of_variables_to_all_tables(tablefile)
 
 
 
