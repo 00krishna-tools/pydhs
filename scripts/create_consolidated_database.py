@@ -26,6 +26,8 @@ def main_birth(database, tablefile):
     c.action_add_wealth_wlthindf_column_to_intersection_table()
     c.action_add_wealth_wlthind5_column_to_intersection_table()
     c.action_rename_intersection_table('intersection_table_birth')
+    c.action_add_columns_for_merge()
+
     c.action_merge_wealth_data_into_birth_table()
     print("all done.")
 

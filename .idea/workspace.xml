@@ -4,7 +4,7 @@
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/prepare_database_for_processing.py" afterPath="$PROJECT_DIR$/scripts/prepare_database_for_processing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/create_consolidated_database.py" afterPath="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +31,7 @@
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_table_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_table_names_to_lowercase Coverage Results" MODIFIED="1476821671027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_TestController_and_test_union_of_columns.coverage" NAME="py.test in TestController and test_union_of_columns Coverage Results" MODIFIED="1476516079521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$create_consolidated_database.coverage" NAME="create_consolidated_database Coverage Results" MODIFIED="1477347890986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/pydhs$prepare_database_for_processing.coverage" NAME="prepare_database_for_processing Coverage Results" MODIFIED="1495049046441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/pydhs$prepare_database_for_processing.coverage" NAME="prepare_database_for_processing Coverage Results" MODIFIED="1498601274175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors.coverage" NAME="py.test in Test_Database_Cursors Coverage Results" MODIFIED="1475094219702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$py_test_in_Test_Database_Cursors_and_test_update_column_names_to_lowercase.coverage" NAME="py.test in Test_Database_Cursors and test_update_column_names_to_lowercase Coverage Results" MODIFIED="1476821691907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/pydhs$pytest_dhs.coverage" NAME="pytest_dhs Coverage Results" MODIFIED="1475090975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -61,14 +61,19 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="244" column="29" lean-forward="false" selection-start-line="244" selection-start-column="29" selection-end-line="244" selection-end-column="29" />
+            <state relative-caret-position="544">
+              <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
-                <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-                <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-                <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-                <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+                <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+                <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+                <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+                <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+                <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+                <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+                <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+                <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+                <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
               </folding>
             </state>
           </provider>
@@ -98,8 +103,8 @@
       <file leaf-file-name="create_consolidated_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,8 +113,8 @@
       <file leaf-file-name="prepare_database_for_processing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="112" lean-forward="false" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="112" />
+            <state relative-caret-position="600">
+              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding>
                 <element signature="e#2#45#0" expanded="true" />
               </folding>
@@ -173,8 +178,8 @@
         <option value="$PROJECT_DIR$/scripts/standardize_cleanup_vars.py" />
         <option value="$PROJECT_DIR$/scripts/import_database_tables_from_csv/import_database_tables_from_csv.sh" />
         <option value="$PROJECT_DIR$/pydhs/Database.py" />
-        <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
         <option value="$PROJECT_DIR$/scripts/prepare_database_for_processing.py" />
+        <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
       </list>
     </option>
@@ -1017,7 +1022,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498529752456</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="updated prepare script to include variable file name in args.">
+      <created>1498595201867</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1498595201867</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1063,11 +1075,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2582822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39887005" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2511933" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39867842" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995227" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1095,7 +1107,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added function to comvert all table names and column names to lowercase." />
     <MESSAGE value="added feature to add the table name to each table. So that is great. This should now propagate to the intersection of the table fields." />
     <MESSAGE value="added script to scripts folder for preparing database for generating the union and intersection tables." />
     <MESSAGE value="fixed the extension on the prepare_database_for_processing file.&#10;" />
@@ -1120,11 +1131,19 @@
     <MESSAGE value="added merge functions to create database script." />
     <MESSAGE value="confirming add_list_of_variables_to_all_tables() is in the controller." />
     <MESSAGE value="fixed name error in the preprocessing script." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed name error in the preprocessing script." />
+    <MESSAGE value="updated prepare script to include variable file name in args." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated prepare script to include variable file name in args." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pydhs/Controller.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1143,10 +1162,15 @@
           <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1186,10 +1210,15 @@
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1221,10 +1250,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1249,10 +1283,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1277,10 +1316,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1305,10 +1349,15 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1333,10 +1382,15 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1354,10 +1408,15 @@
           <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1487,34 +1546,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/prepare_database_for_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="112" lean-forward="false" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="112" />
+        <state relative-caret-position="600">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding>
             <element signature="e#2#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/create_consolidated_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="244" column="29" lean-forward="false" selection-start-line="244" selection-start-column="29" selection-end-line="244" selection-end-column="29" />
+        <state relative-caret-position="544">
+          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1498595175697" expanded="true" signature="2739:2796" ph="ALTER TABLE IF... " />
-            <marker date="1498595175697" expanded="true" signature="9240:10007" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="12917:13075" ph="UPDATE inter... " />
-            <marker date="1498595175697" expanded="true" signature="13217:13270" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="2759:2816" ph="ALTER TABLE IF... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5564" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5507:5569" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5594:5663" ph="alter table intersection_table_birth... " />
+            <marker date="1498615456223" expanded="true" signature="5689:5813" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="5857:6007" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="10067:10834" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="13744:13902" ph="UPDATE inter... " />
+            <marker date="1498615456223" expanded="true" signature="14044:14097" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>

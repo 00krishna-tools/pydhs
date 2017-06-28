@@ -95,9 +95,9 @@ class Controller():
 
     def action_add_list_of_variables_to_all_tables(self, tablefile, variablefile):
 
-        vars = pd.read_csv(variablefile)
+        vars = pd.read_csv(variablefile).iloc[:,1]
 
-        tables = pd.read_csv(tablefile)
+        tables = pd.read_csv(tablefile).iloc[:,1]
 
         query = "ALTER TABLE IF EXISTS %s add column if not exists %s text;"
 
@@ -171,6 +171,26 @@ class Controller():
 
         self.db.get_regular_cursor_query_no_return(query)
 
+
+    def action_add_columns_for_merge(self):
+        query1 = """alter table intersection_table_birth add column new_whhid text;"""
+        query2 = """alter table intersection_table_birth add column length_caseid integer;"""
+
+        query3 = """UPDATE
+                    	intersection_table_birth
+                    SET
+	                length_caseid = length(caseid);
+                 """
+
+        query4 = """UPDATE 
+                    	intersection_table_birth
+                    SET
+	                    new_whhid = substring(caseid, 1, length_caseid - 3);"""
+
+        self.db.get_regular_cursor_query_no_return(query1)
+        self.db.get_regular_cursor_query_no_return(query2)
+        self.db.get_regular_cursor_query_no_return(query3)
+        self.db.get_regular_cursor_query_no_return(query4)
 
     def action_build_union_fields_table(self, tablename,tablefile):
 
