@@ -26,7 +26,7 @@ import sqlalchemy
 from functools import reduce
 from sqlalchemy.ext.declarative import declarative_base
 from psycopg2.extensions import AsIs
-
+from pydhs.Data_Cleaning_Constants import CLEAN_DHS_YEARS
 
 
 ## Initialize Constants
@@ -36,11 +36,7 @@ TABLENAMES = ["union_table", "intersection_table"]
 
 class Controller():
 
-
-
-
     def __init__(self, dbname):
-
 
     ## create a database object inside the controller to manage state changes
     #  to the database.
@@ -192,6 +188,26 @@ class Controller():
         self.db.get_regular_cursor_query_no_return(query3)
         self.db.get_regular_cursor_query_no_return(query4)
 
+    def action_add_columns_for_country_data(self):
+        query = """ALTER table 
+	                    intersection_table_birth
+                    ADD column country_name text,
+                    ADD column iso3 text,
+                    ADD column gbd_region text,
+                    ADD column neonatal_mortality text,
+                    ADD column post_neonatal_mortality text,
+                    ADD column age_1_to_5__mortality text,
+                    ADD column under_5_mortality_lower_bound text,
+                    ADD column under_5_mortality text,
+                    ADD column under_5_mortality_upper_bound text,
+                    ADD column neonatal_deaths text,
+                    ADD column post_neonatal_deaths text,
+                    ADD column age_1_to_5_deaths text,
+                    ADD column under_5_deaths text;"""
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+
     def action_build_union_fields_table(self, tablename,tablefile):
 
         fields = self.action_get_union_of_fields_across_database_tables(
@@ -216,6 +232,13 @@ class Controller():
 
         self.conn_sqlalchemy._build_table_class(tablename, fields)
 
+
+    def action_clean_year_values_in_intersection_table(self):
+
+        query = "UPDATE intersection_table_birth SET v007 = %s where trim(v007) = %s;"
+
+        for k,v in CLEAN_DHS_YEARS:
+            self.db.get_regular_cursor_query_no_return(q, (v,k,))
 
     def action_get_variable_names_for_each_table_in_database(self, tablefile):
 
@@ -323,8 +346,8 @@ class Controller():
 	                    intersection_table_birth
                    SET
 	                    whhid = intersection_table_wealth.whhid,
-	                    wlthindf = trim(intersection_table_wealth.wlthindf),
-	                    wlthind5 = trim(intersection_table_wealth.wlthind5)
+	                    v191 = trim(intersection_table_wealth.wlthindf),
+	                    v190 = trim(intersection_table_wealth.wlthind5)
                    FROM
 	                    intersection_table_wealth
                    WHERE
@@ -334,6 +357,19 @@ class Controller():
                    AND
 	                    substring(trim(intersection_table_birth.tablename),5,1) = substring(trim(intersection_table_wealth.tablename), 5, 1);
                 """
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+
+    def action_update_iso3_codes_for_country_data(self):
+        query = """UPDATE 
+	                intersection_table_birth
+                    SET
+	                    iso3 = trim(country_codes.iso3code)
+                    FROM
+	                    country_codes
+                    WHERE
+	                    trim(v000) = trim(dhs_codes);"""
 
         self.db.get_regular_cursor_query_no_return(query)
 
