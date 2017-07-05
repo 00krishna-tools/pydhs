@@ -35,13 +35,13 @@ def main_merge(database):
 
 def main_add_country_data(database):
     c = Controller(database)
-    c.action_add_columns_for_country_data()
-    c.action_update_iso3_codes_for_country_data()
+    #c.action_add_columns_for_country_data()
+    #c.action_update_iso3_codes_for_country_data()
     c.action_clean_year_values_in_intersection_table()
 
 if __name__ == "__main__":
     # execute only if run as a script
-    main_wealth('db_dhs_global', 'tablelists/tablelist_wi.csv')
-    main_birth('db_dhs_global', 'tablelists/tablelist_br.csv')
-    main_merge('db_dhs_global')
+#    main_wealth('db_dhs_global', 'tablelists/tablelist_wi.csv')
+#    main_birth('db_dhs_global', 'tablelists/tablelist_br.csv')
+#    main_merge('db_dhs_global')
     main_add_country_data('db_dhs_global')

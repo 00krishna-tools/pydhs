@@ -237,8 +237,8 @@ class Controller():
 
         query = "UPDATE intersection_table_birth SET v007 = %s where trim(v007) = %s;"
 
-        for k,v in CLEAN_DHS_YEARS:
-            self.db.get_regular_cursor_query_no_return(q, (v,k,))
+        for k,v in CLEAN_DHS_YEARS.items():
+            self.db.get_regular_cursor_query_no_return(query, (v,k,))
 
     def action_get_variable_names_for_each_table_in_database(self, tablefile):
 
@@ -357,6 +357,14 @@ class Controller():
                    AND
 	                    substring(trim(intersection_table_birth.tablename),5,1) = substring(trim(intersection_table_wealth.tablename), 5, 1);
                 """
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_merge_country_data_into_birth_table(self):
+
+        query = """
+        
+        """
 
         self.db.get_regular_cursor_query_no_return(query)
 
