@@ -362,12 +362,30 @@ class Controller():
 
     def action_merge_country_data_into_birth_table(self):
 
-        query = """
-        
-        """
+        query = """UPDATE
+	                    intersection_table_birth
+                    SET
+                        country_name = country_data.country_name,
+                        gbd_region = country_data.gbd_region,
+                        neonatal_mortality = country_data.neonatal_mortality,
+                        post_neonatal_mortality = country_data.post_neonatal_mortality,
+                        age_1_to_5__mortality = country_data.age_1_to_5__mortality,
+                        under_5_mortality_lower_bound = country_data.under_5_mortality_lower_bound,
+                        under_5_mortality = country_data.under_5_mortality,
+                        under_5_mortality_upper_bound = country_data.under_5_mortality_upper_bound,
+                        neonatal_deaths = country_data.neonatal_deaths,
+                        post_neonatal_deaths = country_data.post_neonatal_deaths,
+                        age_1_to_5_deaths = country_data.age_1_to_5_deaths,
+                        under_5_deaths = country_data.under_5_deaths
+                    FROM
+                        country_data
+                    WHERE
+                        trim(intersection_table_birth.iso3) = trim(country_data.iso3)
+                    AND
+                        trim(v007) = trim(country_data.year);
+                        """
 
         self.db.get_regular_cursor_query_no_return(query)
-
 
     def action_update_iso3_codes_for_country_data(self):
         query = """UPDATE 
