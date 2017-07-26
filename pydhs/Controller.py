@@ -181,7 +181,7 @@ class Controller():
         query4 = """UPDATE 
                     	intersection_table_birth
                     SET
-	                    new_whhid = substring(caseid, 1, length_caseid - 3);"""
+	                    new_whhid = substring(trim(caseid), 1, length_caseid - 3);"""
 
         self.db.get_regular_cursor_query_no_return(query1)
         self.db.get_regular_cursor_query_no_return(query2)
@@ -345,13 +345,13 @@ class Controller():
         query = """UPDATE
 	                    intersection_table_birth
                    SET
-	                    whhid = intersection_table_wealth.whhid,
+	                    whhid = trim(intersection_table_wealth.whhid),
 	                    v191 = trim(intersection_table_wealth.wlthindf),
 	                    v190 = trim(intersection_table_wealth.wlthind5)
                    FROM
 	                    intersection_table_wealth
                    WHERE
-	                    new_whhid = intersection_table_wealth.whhid
+	                    trim(new_whhid) = trim(intersection_table_wealth.whhid)
                    AND
 	                    substring(trim(intersection_table_birth.tablename),0,3) = substring(trim(intersection_table_wealth.tablename), 0, 3)
                    AND
