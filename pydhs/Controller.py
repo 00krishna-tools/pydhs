@@ -360,6 +360,44 @@ class Controller():
 
         self.db.get_regular_cursor_query_no_return(query)
 
+    def action_merge_wealth_data_into_birth_table_egypt(self):
+        query = """UPDATE
+                        intersection_table_birth
+                   SET
+                        whhid = trim(intersection_table_wealth.whhid),
+                        v191 = intersection_table_wealth.wlthindf,
+                        v190 = intersection_table_wealth.wlthind5
+                   FROM
+                        intersection_table_wealth
+                   WHERE
+                        trim(new_whhid) = trim(intersection_table_wealth.whhid)
+                   AND
+                        substring(trim(intersection_table_birth.tablename),0,3) = 'eg'
+                   AND
+                        substring(trim(intersection_table_birth.tablename),5,1) = '4';
+                """
+
+        self.db.get_regular_cursor_query_no_return(query)
+
+    def action_merge_wealth_data_into_birth_table_philippines(self):
+        query = """UPDATE
+                        intersection_table_birth
+                   SET
+                        whhid = trim(intersection_table_wealth.whhid),
+                        v191 = intersection_table_wealth.wlthindf,
+                        v190 = intersection_table_wealth.wlthind5
+                   FROM
+                        intersection_table_wealth
+                   WHERE
+                        trim(new_whhid) = trim(intersection_table_wealth.whhid)
+                   AND
+                        substring(trim(intersection_table_birth.tablename),0,3) = 'ph'
+                   AND
+                        substring(trim(intersection_table_birth.tablename),5,1) = '3';
+                """
+
+        self.db.get_regular_cursor_query_no_return(query)
+
     def action_merge_country_data_into_birth_table(self):
 
         query = """UPDATE
