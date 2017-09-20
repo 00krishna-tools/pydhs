@@ -26,8 +26,6 @@ import asyncpg
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, Integer
 
-
-
 ## Initialize Constants
 
 
@@ -50,17 +48,14 @@ postgresql, but it is also the least mature.
 
 
 class DatabasePsycopg2():
-
-
     def __init__(self,
                  dbname,
                  username,
                  password,
-                 hostname = 'localhost',
-                 portnumber = 5433):
+                 hostname='localhost',
+                 portnumber=5433):
 
-
-    ## Setup psycopg2 database connection.
+        ## Setup psycopg2 database connection.
 
 
         self.conn = self.connect_to_postgres_through_psycopg2(dbname,
@@ -69,15 +64,9 @@ class DatabasePsycopg2():
                                                               hostname,
                                                               portnumber)
 
-
-
-        if isinstance(self.conn,pg.extensions.connection):
-
+        if isinstance(self.conn, pg.extensions.connection):
             self.rcursor = self.conn.cursor()
             self.dictcursor = self.conn.cursor(cursor_factory=pgextras.DictCursor)
-
-
-
 
     ## Setup pandas and sqlalchemy connection to database
 
@@ -86,17 +75,17 @@ class DatabasePsycopg2():
                                              dbname,
                                              username,
                                              password,
-                                             hostname = 'localhost',
-                                             portnumber = 5433):
+                                             hostname='localhost',
+                                             portnumber=5433):
 
         try:
 
             connection_string = "dbname=%s user=%s host=%s password=%s " \
                                 "port=%d " % (dbname,
-                                     username,
-                                     hostname,
-                                     password,
-                                     int(portnumber))
+                                              username,
+                                              hostname,
+                                              password,
+                                              int(portnumber))
 
             conn = pg.connect(connection_string)
         except:
@@ -104,13 +93,17 @@ class DatabasePsycopg2():
             print('check database connection information before proceeding')
             raise
 
-        return(conn)
+        return (conn)
 
+    def add_column_to_table(self, tablename, columname):
 
+        query = "ALTER TABLE (%s) ADD COLUMN IF NOT EXISTS (%s) varchar(255);"
+
+        return (self.get_regular_cursor_query_no_return(query, (tablename, columname)))
 
     def get_dictionary_cursor_query(self,
                                     query,
-                                    strings = ('',)):
+                                    strings=('',)):
 
         try:
             self.dictcursor.execute(query, strings)
@@ -121,10 +114,9 @@ class DatabasePsycopg2():
 
         return (self.dictcursor.fetchall())
 
-
     def get_regular_cursor_query(self,
                                  query,
-                                 strings = ('',)):
+                                 strings=('',)):
 
         try:
             self.rcursor.execute(query, strings)
@@ -135,10 +127,9 @@ class DatabasePsycopg2():
 
         return (self.rcursor.fetchall())
 
-
     def get_regular_cursor_query_no_return(self,
-                                 query,
-                                 strings = ('',)):
+                                           query,
+                                           strings=('',)):
 
         try:
             self.rcursor.execute(query, strings)
@@ -149,18 +140,13 @@ class DatabasePsycopg2():
 
         return (0)
 
-
     def get_table_column_names(self,
                                tablename):
-
-
 
         query = "SELECT column_name FROM information_schema.columns WHERE " \
                 "table_name=(%s)"
 
         return (self.get_regular_cursor_query(query, (tablename,)))
-
-
 
     def get_list_of_tables_in_database(self,
                                        schema):
@@ -216,7 +202,6 @@ class DatabasePsycopg2():
         if len(list_of_updates) > 0:
             print("not all table names were fixed. Try again.")
 
-
     def check_existence_or_drop_query(self, tablename):
 
         query = 'DROP TABLE IF EXISTS {};'.format(tablename)
@@ -228,7 +213,7 @@ class DatabasePsycopg2():
 
         query = """SELECT table_catalog, table_schema, table_name, column_name, data_type, is_generated, is_updatable FROM information_schema.columns where table_schema ='public'"""
 
-        return(pd.read_sql_query(query, self.conn))
+        return (pd.read_sql_query(query, self.conn))
 
     def set_connection_closed(self):
 
@@ -238,8 +223,7 @@ class DatabasePsycopg2():
         self.dictcursor.close()
         self.conn.close()
 
-        return(1)
-
+        return (1)
 
 
 '''
@@ -253,27 +237,21 @@ DatabaseSqlalchemy Class:
 '''
 
 
-
-
 class DatabaseSqlalchemy():
-
-
     def __init__(self,
                  dbname,
                  username,
                  password,
-                 hostname = 'localhost',
-                 portnumber = 5433):
-
-
-    ## Setup psycopg2 database connection.
+                 hostname='localhost',
+                 portnumber=5433):
+        ## Setup psycopg2 database connection.
 
         self.conn = self.connect_to_postgres_through_sqlalchemy(
-                                                              username,
-                                                              password,
-                                                              dbname,
-                                                              hostname,
-                                                              portnumber)
+            username,
+            password,
+            dbname,
+            hostname,
+            portnumber)
 
         self.rconn = self.conn.raw_connection()
 
@@ -283,7 +261,6 @@ class DatabaseSqlalchemy():
                                                dbname,
                                                hostname,
                                                portnumber):
-
         '''Returns a connection and a metadata object'''
         # We connect with the help of the PostgreSQL URL
         # postgresql://federer:grandestslam@localhost:5432/tennis
@@ -295,27 +272,23 @@ class DatabaseSqlalchemy():
         con.connect()
         # We then bind the connection to MetaData()
         meta = MetaData(bind=con, reflect=True)
-        #print(meta)
-        return(con)
-
+        # print(meta)
+        return (con)
 
     def get_table_list_as_dataframe(self, schemaname):
-
-        vals = {'schemaname' : schemaname}
+        vals = {'schemaname': schemaname}
 
         query = "SELECT tablename FROM pg_catalog.pg_tables where schemaname =:schemaname"
-        res = pd.read_sql_query(sa.text(query), self.conn, params = vals)
-        return(res)
+        res = pd.read_sql_query(sa.text(query), self.conn, params=vals)
+        return (res)
 
     def get_column_list_for_table_as_dataframe(self, tablename):
-
         vals = {'tablename': tablename}
 
         query = "SELECT column_name FROM information_schema.columns WHERE " \
                 "table_name=:tablename"
         res = pd.read_sql_query(sa.text(query), self.conn, params=vals)
         return (res)
-
 
     def _build_table_class(self, tablename, fields):
         Base = declarative_base()
@@ -328,16 +301,7 @@ class DatabaseSqlalchemy():
         for index, row in fields.iterrows():
             setattr(NewTable, row['fields'], Column(String(255)))
 
-
         Base.metadata.create_all(self.conn)
-
-
-
-
-
-
-
-
 
 
 '''
@@ -352,24 +316,20 @@ DatabaseAsyncpg Class:
 
 
 class DatabaseAsyncpg():
-
-
     def __init__(self,
                  dbname,
                  username,
                  password,
-                 hostname = 'localhost',
-                 portnumber = 5433):
+                 hostname='localhost',
+                 portnumber=5433):
 
-
-    ## Setup psycopg2 database connection.
+        ## Setup psycopg2 database connection.
 
         self.conn = self.connect_to_postgres_through_psycopg2(dbname,
                                                               username,
                                                               password,
                                                               hostname,
                                                               portnumber)
-
 
     def connect_to_postgres_through_psycopg2(self,
                                              dbname,
