@@ -110,3 +110,11 @@ class Controller_countrydata():
 
         self.db.get_regular_cursor_query_no_return(query)
 
+
+    def action_add_column_iso3_to_intersection_table(self):
+
+        query = """ALTER table 
+	                    intersection_table_birth
+                    ADD column iso3 text;"""
+
+        self.db.get_regular_cursor_query_no_return(query)
