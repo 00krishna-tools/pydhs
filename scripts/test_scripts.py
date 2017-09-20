@@ -5,12 +5,12 @@ from pydhs.Controller import Controller
 from pydhs.controller_countrydata import Controller_countrydata
 
 def main_add_country_data(database):
-    c = Controller(database)
     d = Controller_countrydata(database)
-    c.action_add_columns_for_country_data()
-    c.action_update_iso3_codes_for_country_data()
-    c.action_clean_year_values_in_intersection_table()
-    c.action_merge_country_data_into_birth_table()
+    d.update_country_data_ihme_table_year_field()
+    d.create_table_country_data_from_joining_data_sources()
+    d.get_country_column_names_and_add_to_intersection_table()
+    d.create_query_for_merging_country_data_into_intersection_table()
+    d.merge_country_data_into_intersection_table()
     print('completed addition of country data.')
 
 if __name__ == "__main__":

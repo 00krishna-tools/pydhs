@@ -25,6 +25,7 @@ import asyncio
 import asyncpg
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, Integer
+from psycopg2.extensions import AsIs
 
 ## Initialize Constants
 
@@ -97,9 +98,9 @@ class DatabasePsycopg2():
 
     def add_column_to_table(self, tablename, columname):
 
-        query = "ALTER TABLE (%s) ADD COLUMN IF NOT EXISTS (%s) varchar(255);"
+        query = "ALTER TABLE %s ADD COLUMN IF NOT EXISTS %s varchar(255);"
 
-        return (self.get_regular_cursor_query_no_return(query, (tablename, columname)))
+        return (self.get_regular_cursor_query_no_return(query, (AsIs(tablename), AsIs(columname),)))
 
     def get_dictionary_cursor_query(self,
                                     query,

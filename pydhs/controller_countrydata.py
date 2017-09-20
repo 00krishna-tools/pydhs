@@ -17,7 +17,7 @@ import pandas as pd
 import os
 import datetime
 import psycopg2 as pg
-#import pydhs.DbTable as DTable
+# import pydhs.DbTable as DTable
 import psycopg2
 from psycopg2 import sql
 from pydhs.Database import DatabasePsycopg2
@@ -28,25 +28,22 @@ from sqlalchemy.ext.declarative import declarative_base
 from psycopg2.extensions import AsIs
 from pydhs.Data_Cleaning_Constants import CLEAN_DHS_YEARS
 
-
 ## Initialize Constants
 
 TABLENAMES = ["union_table", "intersection_table"]
 
 
-class Controller():
-
+class Controller_countrydata():
     def __init__(self, dbname):
 
-    ## create a database object inside the controller to manage state changes
-    #  to the database.
+        ## create a database object inside the controller to manage state changes
+        #  to the database.
 
         self.db = DatabasePsycopg2(dbname,
-                                    'krishnab',
-                                    '3kl4vx71',
-                                    'localhost',
-                                    5433)
-
+                                   'krishnab',
+                                   '3kl4vx71',
+                                   'localhost',
+                                   5433)
 
         self.conn_sqlalchemy = DatabaseSqlalchemy(dbname,
                                                   'krishnab',
@@ -66,7 +63,7 @@ class Controller():
 
     def create_table_country_data_from_joining_data_sources(self):
 
-        query = """CREATE TABLE country_data AS
+        query = """CREATE TABLE IF NOT EXISTS country_data AS
                     SELECT *
                     FROM country_bj_regime
                     LEFT JOIN country_ihme ON country_bj_regime.countryisocode = country_ihme.iso3
@@ -81,5 +78,24 @@ class Controller():
         columnames = self.db.get_table_column_names('country_data')
 
         for n in columnames:
-            self.db.add_column_to_table('intersection_table_birth', n)
+            self.db.add_column_to_table('intersection_table_birth', n[0])
+
+    def create_query_for_merging_country_data_into_intersection_table(self):
+
+        columnames = self.db.get_table_column_names('country_data')
+
+        query_columns = ''
+
+        for n in columnames:
+            column_entry_format = str(n[0]) + ' = country_data.' + str(n[0]) + ', '
+            query_columns = query_columns + column_entry_format
+
+        return(query_columns)
+
+    def merge_country_data_into_intersection_table(self):
+
+        query_columns = self.create_query_for_merging_country_data_into_intersection_table()
+        query = 'UPDATE intersection_table_birth SET ' + query_columns[:-2] + ' ' +  'FROM country_data WHERE trim(intersection_table_birth.iso3) = trim(country_data.countryisocode) AND trim(v007) = trim(country_data.year);'
+        self.db.get_regular_cursor_query_no_return(query)
+
 
