@@ -444,17 +444,6 @@ class Controller():
 
         self.db.get_regular_cursor_query_no_return(query)
 
-    def action_update_iso3_codes_for_country_data(self):
-        query = """UPDATE 
-	                intersection_table_birth
-                    SET
-	                    iso3 = trim(country_codes.iso3code)
-                    FROM
-	                    country_codes
-                    WHERE
-	                    trim(v000) = trim(dhs_codes);"""
-
-        self.db.get_regular_cursor_query_no_return(query)
 
 
     def action_set_table_names_to_lowercase(self):

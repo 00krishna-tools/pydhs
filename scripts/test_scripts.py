@@ -6,6 +6,7 @@ from pydhs.controller_countrydata import Controller_countrydata
 
 def main_add_country_data(database):
     d = Controller_countrydata(database)
+    d.action_update_iso3_codes_for_country_data()
     d.update_country_data_ihme_table_year_field()
     d.create_table_country_data_from_joining_data_sources()
     d.get_country_column_names_and_add_to_intersection_table()

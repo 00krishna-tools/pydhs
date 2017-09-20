@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/test_scripts.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Database.py" afterPath="$PROJECT_DIR$/pydhs/Database.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pydhs/controller_countrydata.py" afterPath="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py" afterPath="$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test_scripts.py" afterPath="$PROJECT_DIR$/scripts/test_scripts.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,29 +61,28 @@
       <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="456" column="57" lean-forward="true" selection-start-line="456" selection-start-column="57" selection-end-line="456" selection-end-column="57" />
+            <state relative-caret-position="113">
+              <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
-                <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-                <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-                <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-                <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-                <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-                <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-                <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+                <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+                <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+                <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+                <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+                <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+                <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+                <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
               </folding>
             </state>
           </provider>
@@ -93,14 +91,15 @@
       <file leaf-file-name="controller_countrydata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="97" column="84" lean-forward="false" selection-start-line="97" selection-start-column="84" selection-end-line="97" selection-end-column="84" />
+            <state relative-caret-position="503">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
-                <marker date="1505875321709" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
-                <marker date="1505875321709" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
-                <marker date="1505875321709" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
-                <marker date="1505875321709" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
+                <marker date="1505877281882" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
+                <marker date="1505877281882" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
+                <marker date="1505877281882" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
+                <marker date="1505877281882" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
+                <marker date="1505877281882" expanded="true" signature="3472:3738" ph="UPDATE inter... " />
               </folding>
             </state>
           </provider>
@@ -132,8 +131,8 @@
       <file leaf-file-name="5_merge_country_data_to_births.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="180">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -144,8 +143,8 @@
       <file leaf-file-name="test_scripts.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/test_scripts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
                 <element signature="e#1#44#0" expanded="true" />
               </folding>
@@ -210,10 +209,10 @@
         <option value="$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py" />
         <option value="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
         <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
-        <option value="$PROJECT_DIR$/pydhs/Controller.py" />
         <option value="$PROJECT_DIR$/scripts/4_merge_wealth_to_births.py" />
         <option value="$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py" />
         <option value="$PROJECT_DIR$/pydhs/Database.py" />
+        <option value="$PROJECT_DIR$/pydhs/Controller.py" />
         <option value="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
         <option value="$PROJECT_DIR$/scripts/test_scripts.py" />
       </list>
@@ -704,13 +703,6 @@
       <option name="presentableId" value="Default" />
       <updated>1474501598024</updated>
     </task>
-    <task id="LOCAL-00008" summary="major changes to the database modules. But it is working. reorganized test cases. separate database objects into 3 different types of objects.">
-      <created>1475092415500</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1475092415500</updated>
-    </task>
     <task id="LOCAL-00009" summary="have the sqlalchemy interfaces to the database working as well as pulling data back into pandas. So that is great.">
       <created>1475094291640</created>
       <option name="number" value="00009" />
@@ -1047,7 +1039,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505869390913</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="new country data feature working. Integration testing.">
+      <created>1505876976200</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1505876976200</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1092,7 +1091,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595092" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595092" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33672318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995227" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1125,7 +1124,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated functions to write csv of variables." />
     <MESSAGE value="added feature to get all variable names per table." />
     <MESSAGE value="added feature to get all variable names per table - fixed table name to information_schema.columns ." />
     <MESSAGE value="added feature to get all variable names per table - fixed query function to return type true." />
@@ -1150,7 +1148,8 @@
     <MESSAGE value="created queries to merge egypt and philippines data with different criteria." />
     <MESSAGE value="added query to trim whhid for indonesia too. Let's see if it has any effect." />
     <MESSAGE value="adding features to incorporate new country data. Added new controller and functions to add columns and change column names." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding features to incorporate new country data. Added new controller and functions to add columns and change column names." />
+    <MESSAGE value="new country data feature working. Integration testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="new country data feature working. Integration testing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1172,25 +1171,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1215,25 +1213,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1258,25 +1255,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1301,25 +1297,24 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1344,25 +1339,24 @@
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1380,25 +1374,24 @@
           <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
@@ -1591,63 +1584,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py">
+    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="113">
+          <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
           <folding>
-            <element signature="e#1#44#0" expanded="true" />
+            <element signature="e#324#342#0" expanded="true" />
+            <marker date="1505877281846" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
+            <marker date="1505877281846" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
+            <marker date="1505877281846" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="18958:19116" ph="UPDATE inter... " />
+            <marker date="1505877281846" expanded="true" signature="19258:19311" ph="ALTER TABLE IF... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="97" column="84" lean-forward="false" selection-start-line="97" selection-start-column="84" selection-end-line="97" selection-end-column="84" />
+        <state relative-caret-position="503">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
-            <marker date="1505875321709" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
-            <marker date="1505875321709" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
-            <marker date="1505875321709" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
-            <marker date="1505875321709" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
+            <marker date="1505877281882" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
+            <marker date="1505877281882" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
+            <marker date="1505877281882" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
+            <marker date="1505877281882" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
+            <marker date="1505877281882" expanded="true" signature="3472:3738" ph="UPDATE inter... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
+    <entry file="file://$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="456" column="57" lean-forward="true" selection-start-line="456" selection-start-column="57" selection-end-line="456" selection-end-column="57" />
+        <state relative-caret-position="180">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#324#342#0" expanded="true" />
-            <marker date="1504148024031" expanded="true" signature="2812:2869" ph="ALTER TABLE IF... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5617" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5560:5622" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5647:5716" ph="alter table intersection_table_birth... " />
-            <marker date="1504148024031" expanded="true" signature="5742:5866" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="5910:6060" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="6373:7153" ph="ALTER table intersection_table_birth" />
-            <marker date="1504148024031" expanded="true" signature="8223:8290" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="11302:12049" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12893" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="12213:12894" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13740" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13743" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13063:13744" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="13911:14591" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="14751:16039" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="16205:16471" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19364:19522" ph="UPDATE inter... " />
-            <marker date="1504148024031" expanded="true" signature="19664:19717" ph="ALTER TABLE IF... " />
+            <element signature="e#1#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test_scripts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
             <element signature="e#1#44#0" expanded="true" />
           </folding>
