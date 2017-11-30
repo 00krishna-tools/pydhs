@@ -235,7 +235,7 @@ class Controller():
 
     def action_clean_year_values_in_intersection_table(self):
 
-        query = "UPDATE intersection_table_birth SET v007 = %s where trim(v007) = %s;"
+        query = "UPDATE intersection_table_birth SET b2 = %s where trim(b2) = %s;"
 
         for k,v in CLEAN_DHS_YEARS.items():
             self.db.get_regular_cursor_query_no_return(query, (v,k,))
