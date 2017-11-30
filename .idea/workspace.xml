@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/5_merge_wealth_to_births.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/tablelists/tablelist_all.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/tablelists/tablelist_br.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/tablelists/tablelist_wi.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/added_variables_birth_table.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/intersectionVariableList.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/unionVariableList.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/variablesByTable.csv" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" afterPath="$PROJECT_DIR$/scripts/4_build_country_data_table.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -717,13 +707,6 @@
       <option name="presentableId" value="Default" />
       <updated>1474501598024</updated>
     </task>
-    <task id="LOCAL-00014" summary="created functions to generate union and intersect tables in database. So this feature now generates empty tables. Next task is to fill those tables.">
-      <created>1476638796964</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1476638796964</updated>
-    </task>
     <task id="LOCAL-00015" summary="Added function to comvert all table names and column names to lowercase.">
       <created>1476819440785</created>
       <option name="number" value="00015" />
@@ -1060,7 +1043,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512056816892</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary=" so matching on b2 instead of v007">
+      <created>1512057144253</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1512057144254</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1140,7 +1130,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added feature to get all variable names per table - got query fixed to get all vars." />
     <MESSAGE value="fixed the function to create the tablename and then fill it with the tablename." />
     <MESSAGE value="added functions to create the wealth file columns in the database." />
     <MESSAGE value="added functions to all wealth v002 and v003 columns to intersection table. This will allow me to check the results to see if they make sense." />
@@ -1165,7 +1154,8 @@
     <MESSAGE value="rearranged some functions to create new script 4. Working to get the 6 script working." />
     <MESSAGE value="Got the b2 dates migrated and then matched on." />
     <MESSAGE value="fixed #9 so matching on b2 instead of v007" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed #9 so matching on b2 instead of v007" />
+    <MESSAGE value=" so matching on b2 instead of v007" />
+    <option name="LAST_COMMIT_MESSAGE" value=" so matching on b2 instead of v007" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
