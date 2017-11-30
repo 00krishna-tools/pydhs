@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="rearranged some functions to create new script 4. Working to get the 6 script working.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/pydhs.iml" afterPath="$PROJECT_DIR$/.idea/pydhs.iml" />
+    <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/5_merge_wealth_to_births.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/tablelists/tablelist_all.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/tablelists/tablelist_br.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/tablelists/tablelist_wi.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/added_variables_birth_table.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/intersectionVariableList.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/unionVariableList.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/variable_lists/variablesByTable.csv" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
-      <change beforePath="$PROJECT_DIR$/pydhs/controller_countrydata.py" afterPath="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" afterPath="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/test_scripts.py" afterPath="$PROJECT_DIR$/scripts/test_scripts.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" afterPath="$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" afterPath="$PROJECT_DIR$/scripts/4_build_country_data_table.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +65,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="237" column="74" lean-forward="false" selection-start-line="237" selection-start-column="74" selection-end-line="237" selection-end-column="74" />
+            <state relative-caret-position="232">
+              <caret line="244" column="39" lean-forward="true" selection-start-line="244" selection-start-column="39" selection-end-line="244" selection-end-column="39" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
                 <marker date="1512056008370" expanded="true" signature="2471:2499" ph="UPDATE %s SE... " />
@@ -132,19 +135,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller_countrydata.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller_countrydata.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-433">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="293">
+              <caret line="97" column="193" lean-forward="false" selection-start-line="97" selection-start-column="193" selection-end-line="97" selection-end-column="193" />
               <folding>
                 <element signature="e#324#342#0" expanded="true" />
-                <marker date="1505927727941" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
-                <marker date="1505927727941" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
-                <marker date="1505927727941" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
-                <marker date="1505927727941" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
-                <marker date="1505927727941" expanded="true" signature="3494:3760" ph="UPDATE inter... " />
-                <marker date="1505927727941" expanded="true" signature="3906:4005" ph="ALTER table intersection_table_birth" />
+                <marker date="1512056587629" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
+                <marker date="1512056587629" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
+                <marker date="1512056587629" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
+                <marker date="1512056587629" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
+                <marker date="1512056587629" expanded="true" signature="3492:3758" ph="UPDATE inter... " />
+                <marker date="1512056587629" expanded="true" signature="3904:4003" ph="ALTER table intersection_table_birth" />
               </folding>
             </state>
           </provider>
@@ -214,9 +217,9 @@
         <option value="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" />
         <option value="$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" />
         <option value="$PROJECT_DIR$/scripts/test_scripts.py" />
-        <option value="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
         <option value="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
+        <option value="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
       </list>
     </option>
   </component>
@@ -714,20 +717,6 @@
       <option name="presentableId" value="Default" />
       <updated>1474501598024</updated>
     </task>
-    <task id="LOCAL-00012" summary="set up functions in controller to get all tables and fields from each table.&#10;">
-      <created>1476510657492</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1476510657492</updated>
-    </task>
-    <task id="LOCAL-00013" summary="created and tested the functions to get the intersection and union of db columns working. So this feature now works.&#10;">
-      <created>1476514629366</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1476514629366</updated>
-    </task>
     <task id="LOCAL-00014" summary="created functions to generate union and intersect tables in database. So this feature now generates empty tables. Next task is to fill those tables.">
       <created>1476638796964</created>
       <option name="number" value="00014" />
@@ -1057,7 +1046,21 @@
       <option name="project" value="LOCAL" />
       <updated>1505926687783</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Got the b2 dates migrated and then matched on.">
+      <created>1512056157967</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1512056157968</updated>
+    </task>
+    <task id="LOCAL-00062" summary="fixed #9 so matching on b2 instead of v007">
+      <created>1512056816892</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1512056816892</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1094,7 +1097,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1680" height="1031" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1103,11 +1105,11 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33672318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16748466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2386503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595092" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2595092" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39774013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1138,8 +1140,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added feature to get all variable names per table - fixed query function to return type true." />
-    <MESSAGE value="added feature to get all variable names per table - fixed query function to return dataframe instead of list." />
     <MESSAGE value="added feature to get all variable names per table - got query fixed to get all vars." />
     <MESSAGE value="fixed the function to create the tablename and then fill it with the tablename." />
     <MESSAGE value="added functions to create the wealth file columns in the database." />
@@ -1163,7 +1163,9 @@
     <MESSAGE value="new country data feature working. Integration testing." />
     <MESSAGE value="rearranged action_update_iso3_code_for_country_data to the new country data controller." />
     <MESSAGE value="rearranged some functions to create new script 4. Working to get the 6 script working." />
-    <option name="LAST_COMMIT_MESSAGE" value="rearranged some functions to create new script 4. Working to get the 6 script working." />
+    <MESSAGE value="Got the b2 dates migrated and then matched on." />
+    <MESSAGE value="fixed #9 so matching on b2 instead of v007" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed #9 so matching on b2 instead of v007" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1653,32 +1655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-433">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#324#342#0" expanded="true" />
-            <marker date="1505927727941" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
-            <marker date="1505927727941" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
-            <marker date="1505927727941" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
-            <marker date="1505927727941" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
-            <marker date="1505927727941" expanded="true" signature="3494:3760" ph="UPDATE inter... " />
-            <marker date="1505927727941" expanded="true" signature="3906:4005" ph="ALTER table intersection_table_birth" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/5_merge_wealth_to_births.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1689,8 +1665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="237" column="74" lean-forward="false" selection-start-line="237" selection-start-column="74" selection-end-line="237" selection-end-column="74" />
+        <state relative-caret-position="232">
+          <caret line="244" column="39" lean-forward="true" selection-start-line="244" selection-start-column="39" selection-end-line="244" selection-end-column="39" />
           <folding>
             <element signature="e#324#342#0" expanded="true" />
             <marker date="1512056008370" expanded="true" signature="2471:2499" ph="UPDATE %s SE... " />
@@ -1729,6 +1705,32 @@
             <marker date="1512056008370" expanded="true" signature="18654:18696" ph="update %s se... " />
             <marker date="1512056008370" expanded="true" signature="18954:19112" ph="UPDATE inter... " />
             <marker date="1512056008370" expanded="true" signature="19254:19307" ph="ALTER TABLE IF... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#1#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="97" column="193" lean-forward="false" selection-start-line="97" selection-start-column="193" selection-end-line="97" selection-end-column="193" />
+          <folding>
+            <element signature="e#324#342#0" expanded="true" />
+            <marker date="1512056587629" expanded="true" signature="1675:1696" ph="ALTER TABLE IF... " />
+            <marker date="1512056587629" expanded="true" signature="1675:1697" ph="ALTER TABLE IF... " />
+            <marker date="1512056587629" expanded="true" signature="1675:1709" ph="ALTER TABLE IF... " />
+            <marker date="1512056587629" expanded="true" signature="1675:1734" ph="ALTER TABLE IF... " />
+            <marker date="1512056587629" expanded="true" signature="3492:3758" ph="UPDATE inter... " />
+            <marker date="1512056587629" expanded="true" signature="3904:4003" ph="ALTER table intersection_table_birth" />
           </folding>
         </state>
       </provider>
