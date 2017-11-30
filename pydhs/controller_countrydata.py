@@ -95,7 +95,7 @@ class Controller_countrydata():
     def merge_country_data_into_intersection_table(self):
 
         query_columns = self.create_query_for_merging_country_data_into_intersection_table()
-        query = 'UPDATE intersection_table_birth SET ' + query_columns[:-2] + ' ' +  'FROM country_data WHERE trim(intersection_table_birth.iso3) = trim(country_data.countryisocode) AND trim(v007) = trim(country_data.year);'
+        query = 'UPDATE intersection_table_birth SET ' + query_columns[:-2] + ' ' +  'FROM country_data WHERE trim(intersection_table_birth.iso3) = trim(country_data.countryisocode) AND trim(b2) = trim(country_data.year);'
         print(query)
         #self.db.get_regular_cursor_query_no_return(query)
 
