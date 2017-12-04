@@ -1,7 +1,5 @@
 
-from pydhs.Database import DatabasePsycopg2
-from pydhs.Database import DatabaseSqlalchemy
-from pydhs.Controller import Controller
+
 from pydhs.controller_countrydata import Controller_countrydata
 
 def main_add_country_data(database):

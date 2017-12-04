@@ -12,21 +12,10 @@ objects.
 __author__ = 'krishnab'
 __version__ = '0.1.0'
 
-import numpy as np
-import pandas as pd
-import os
-import datetime
-import psycopg2 as pg
-# import pydhs.DbTable as DTable
-import psycopg2
-from psycopg2 import sql
+
 from pydhs.Database import DatabasePsycopg2
 from pydhs.Database import DatabaseSqlalchemy
-import sqlalchemy
-from functools import reduce
-from sqlalchemy.ext.declarative import declarative_base
-from psycopg2.extensions import AsIs
-from pydhs.Data_Cleaning_Constants import CLEAN_DHS_YEARS
+
 
 ## Initialize Constants
 
@@ -96,7 +85,7 @@ class Controller_countrydata():
 
         query_columns = self.create_query_for_merging_country_data_into_intersection_table()
         query = 'UPDATE intersection_table_birth SET ' + query_columns[:-2] + ' ' +  'FROM country_data WHERE trim(intersection_table_birth.iso3) = trim(country_data.countryisocode) AND trim(b2) = trim(country_data.year);'
-        print(query)
+
         #self.db.get_regular_cursor_query_no_return(query)
 
     def action_update_iso3_codes_for_country_data(self):
@@ -107,7 +96,7 @@ class Controller_countrydata():
                     FROM
 	                    country_codes
                     WHERE
-	                    trim(v000) = trim(dhs_codes);"""
+	                    substring(trim(v000) from 1 for 2) = trim(dhs_codes);"""
 
         self.db.get_regular_cursor_query_no_return(query)
 
