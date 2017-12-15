@@ -3,6 +3,7 @@
 from pydhs.Database import DatabasePsycopg2
 from pydhs.Database import DatabaseSqlalchemy
 from pydhs.Controller import Controller
+from pydhs.controller_stored_procedures import Controller_stored_procedures
 
 def main(database, tablefile):
 
@@ -26,7 +27,10 @@ def main_births(database, tablefile, variablefile):
 
     c.action_add_list_of_variables_to_all_tables(tablefile, variablefile)
 
+def load_stored_procedures(database):
 
+    c = Controller_stored_procedures(database)
+    c.add_four_digit_function()
 
 
 if __name__ == "__main__":

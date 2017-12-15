@@ -1,6 +1,7 @@
 from pydhs.Database import DatabasePsycopg2
 from pydhs.Database import DatabaseSqlalchemy
 from pydhs.Controller import Controller
+from pydhs.controller_postprocessing import Controller_postprocessing
 
 def main_birth(database, tablefile):
 
@@ -14,6 +15,9 @@ def main_birth(database, tablefile):
     c.action_rename_intersection_table('intersection_table_birth')
     c.action_add_columns_for_merge()
 
+    d = Controller_postprocessing(database)
+    d.update_b2_dates_to_four_digits()
+    d.update_v007_dates_to_four_digits()
 
     print("birth intersection table built.")
 

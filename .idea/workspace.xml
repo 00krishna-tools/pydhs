@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/pydhs/controller_postprocessing.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pydhs/controller_stored_procedures.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pydhs/Controller.py" afterPath="$PROJECT_DIR$/pydhs/Controller.py" />
-      <change beforePath="$PROJECT_DIR$/pydhs/controller_countrydata.py" afterPath="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/4_build_country_data_table.py" afterPath="$PROJECT_DIR$/scripts/4_build_country_data_table.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" afterPath="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py" afterPath="$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" afterPath="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/added_variables_birth_table.csv" afterPath="$PROJECT_DIR$/scripts/variable_lists/added_variables_birth_table.csv" />
+      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/intersectionVariableList.csv" afterPath="$PROJECT_DIR$/scripts/variable_lists/intersectionVariableList.csv" />
+      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/variablesByTable.csv" afterPath="$PROJECT_DIR$/scripts/variable_lists/variablesByTable.csv" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,99 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4050">
-              <caret line="225" column="8" lean-forward="false" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
-              <folding>
-                <element signature="e#324#343#0" expanded="true" />
-                <marker date="1512063184963" expanded="true" signature="2228:2256" ph="UPDATE %s SE... " />
-                <marker date="1512063184963" expanded="true" signature="2569:2626" ph="ALTER TABLE IF... " />
-                <marker date="1512063184963" expanded="true" signature="5317:5374" ph="alter table intersection_table_birth... " />
-                <marker date="1512063184963" expanded="true" signature="5317:5379" ph="alter table intersection_table_birth... " />
-                <marker date="1512063184963" expanded="true" signature="5404:5473" ph="alter table intersection_table_birth... " />
-                <marker date="1512063184963" expanded="true" signature="5499:5623" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="5667:5817" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="6130:6910" ph="ALTER table intersection_table_birth" />
-                <marker date="1512063184963" expanded="true" signature="7980:8043" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="11055:11802" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="11966:12646" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="11966:12647" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="12816:13493" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="12816:13496" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="12816:13497" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="13664:14344" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="14504:15792" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="16472:16500" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="16595:16644" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="16739:16810" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="16853:16924" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="16967:17038" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17081:17152" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17195:17267" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17310:17391" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17434:17514" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17557:17637" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17680:17760" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17803:17885" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="17981:18049" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="18092:18155" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="18198:18263" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="18306:18368" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="18411:18453" ph="update %s se... " />
-                <marker date="1512063184963" expanded="true" signature="18711:18869" ph="UPDATE inter... " />
-                <marker date="1512063184963" expanded="true" signature="19011:19064" ph="ALTER TABLE IF... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data_Cleaning_Constants.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pydhs/Data_Cleaning_Constants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4_build_country_data_table.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/4_build_country_data_table.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5_merge_wealth_to_births.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/5_merge_wealth_to_births.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6_merge_country_data_to_births.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="controller_countrydata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="545">
+              <caret line="100" column="47" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
                 <element signature="e#325#368#0" expanded="true" />
                 <marker date="1512071389266" expanded="true" signature="1318:1339" ph="ALTER TABLE IF... " />
@@ -160,6 +75,44 @@
                 <marker date="1512071389266" expanded="true" signature="1318:1377" ph="ALTER TABLE IF... " />
                 <marker date="1512071389266" expanded="true" signature="3115:3405" ph="UPDATE inter... " />
                 <marker date="1512071389266" expanded="true" signature="3551:3650" ph="ALTER table intersection_table_birth" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller_stored_procedures.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pydhs/controller_stored_procedures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <element signature="e#325#368#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3_build_birth_intersection_table.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller_postprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pydhs/controller_postprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+              <folding>
+                <element signature="e#325#368#0" expanded="true" />
+                <marker date="1513366817208" expanded="true" signature="1323:1434" ph="update inter... intersection_table_birth" />
+                <marker date="1513366817208" expanded="true" signature="1588:1703" ph="update inter... intersection_table_birth" />
               </folding>
             </state>
           </provider>
@@ -199,6 +152,7 @@
       <find>update</find>
       <find>b2</find>
       <find>print</find>
+      <find>action_add_list_of_variables_to_all_tables</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,11 +184,14 @@
         <option value="$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py" />
         <option value="$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" />
         <option value="$PROJECT_DIR$/scripts/test_scripts.py" />
-        <option value="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
         <option value="$PROJECT_DIR$/scripts/4_build_country_data_table.py" />
         <option value="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
         <option value="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
+        <option value="$PROJECT_DIR$/pydhs/controller_stored_procedures.py" />
+        <option value="$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py" />
+        <option value="$PROJECT_DIR$/pydhs/controller_postprocessing.py" />
+        <option value="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
       </list>
     </option>
   </component>
@@ -267,8 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,6 +251,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1121,7 +1078,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33672318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24171779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24785276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1133,7 +1090,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995227" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1190,26 +1147,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/test_pydhs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#324#343#0" expanded="true" />
+            <element signature="e#324#343#0" expanded="false" />
             <marker date="1512063184963" expanded="true" signature="2228:2256" ph="UPDATE %s SE... " />
             <marker date="1512063184963" expanded="true" signature="2569:2626" ph="ALTER TABLE IF... " />
             <marker date="1512063184963" expanded="true" signature="5317:5374" ph="alter table intersection_table_birth... " />
@@ -1269,7 +1212,7 @@
         <state relative-caret-position="1518">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="e#324#343#0" expanded="true" />
+            <element signature="e#324#343#0" expanded="false" />
             <marker date="1512063184963" expanded="true" signature="2228:2256" ph="UPDATE %s SE... " />
             <marker date="1512063184963" expanded="true" signature="2569:2626" ph="ALTER TABLE IF... " />
             <marker date="1512063184963" expanded="true" signature="5317:5374" ph="alter table intersection_table_birth... " />
@@ -1329,7 +1272,7 @@
         <state relative-caret-position="1518">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="e#324#343#0" expanded="true" />
+            <element signature="e#324#343#0" expanded="false" />
             <marker date="1512063184963" expanded="true" signature="2228:2256" ph="UPDATE %s SE... " />
             <marker date="1512063184963" expanded="true" signature="2569:2626" ph="ALTER TABLE IF... " />
             <marker date="1512063184963" expanded="true" signature="5317:5374" ph="alter table intersection_table_birth... " />
@@ -1382,7 +1325,7 @@
         <state relative-caret-position="1035">
           <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
-            <element signature="e#324#343#0" expanded="true" />
+            <element signature="e#324#343#0" expanded="false" />
             <marker date="1512063184963" expanded="true" signature="2228:2256" ph="UPDATE %s SE... " />
             <marker date="1512063184963" expanded="true" signature="2569:2626" ph="ALTER TABLE IF... " />
             <marker date="1512063184963" expanded="true" signature="5317:5374" ph="alter table intersection_table_birth... " />
@@ -1528,13 +1471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Data_validator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -1588,13 +1524,6 @@
     <entry file="file://$PROJECT_DIR$/scripts/4_merge_wealth_to_births.py" />
     <entry file="file://$PROJECT_DIR$/scripts/5_merge_country_data_to_births.py" />
     <entry file="file://$PROJECT_DIR$/scripts/variable_lists/4_build_country_data_table.py" />
-    <entry file="file://$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test_scripts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1602,10 +1531,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py">
+    <entry file="file://$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1613,6 +1543,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/Data_Cleaning_Constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1625,36 +1571,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-          <folding>
-            <element signature="e#325#368#0" expanded="true" />
-            <marker date="1512071389266" expanded="true" signature="1318:1339" ph="ALTER TABLE IF... " />
-            <marker date="1512071389266" expanded="true" signature="1318:1340" ph="ALTER TABLE IF... " />
-            <marker date="1512071389266" expanded="true" signature="1318:1352" ph="ALTER TABLE IF... " />
-            <marker date="1512071389266" expanded="true" signature="1318:1377" ph="ALTER TABLE IF... " />
-            <marker date="1512071389266" expanded="true" signature="3115:3405" ph="UPDATE inter... " />
-            <marker date="1512071389266" expanded="true" signature="3551:3650" ph="ALTER table intersection_table_birth" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4050">
-          <caret line="225" column="8" lean-forward="false" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+        <state relative-caret-position="252">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="105" selection-end-column="57" />
           <folding>
-            <element signature="e#324#343#0" expanded="true" />
+            <element signature="e#324#343#0" expanded="false" />
             <marker date="1512063184963" expanded="true" signature="2228:2256" ph="UPDATE %s SE... " />
             <marker date="1512063184963" expanded="true" signature="2569:2626" ph="ALTER TABLE IF... " />
             <marker date="1512063184963" expanded="true" signature="5317:5374" ph="alter table intersection_table_birth... " />
@@ -1695,11 +1617,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/Data_Cleaning_Constants.py">
+    <entry file="file://$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="100" column="47" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#325#368#0" expanded="true" />
+            <marker date="1512071389266" expanded="true" signature="1318:1339" ph="ALTER TABLE IF... " />
+            <marker date="1512071389266" expanded="true" signature="1318:1340" ph="ALTER TABLE IF... " />
+            <marker date="1512071389266" expanded="true" signature="1318:1352" ph="ALTER TABLE IF... " />
+            <marker date="1512071389266" expanded="true" signature="1318:1377" ph="ALTER TABLE IF... " />
+            <marker date="1512071389266" expanded="true" signature="3115:3405" ph="UPDATE inter... " />
+            <marker date="1512071389266" expanded="true" signature="3551:3650" ph="ALTER table intersection_table_birth" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/controller_stored_procedures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#325#368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/controller_postprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+          <folding>
+            <element signature="e#325#368#0" expanded="true" />
+            <marker date="1513366817208" expanded="true" signature="1323:1434" ph="update inter... intersection_table_birth" />
+            <marker date="1513366817208" expanded="true" signature="1588:1703" ph="update inter... intersection_table_birth" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
