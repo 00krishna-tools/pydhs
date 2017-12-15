@@ -18,5 +18,7 @@ def main_wealth(database, tablefile):
     c.action_rename_intersection_table('intersection_table_wealth')
     print('wealth intersection table built.')
 
+    d =
+
 if __name__ == "__main__":
     main_wealth('db_dhs_global', 'tablelists/tablelist_wi.csv')

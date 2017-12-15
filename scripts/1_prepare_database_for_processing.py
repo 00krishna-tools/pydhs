@@ -31,7 +31,7 @@ def load_stored_procedures(database):
 
     c = Controller_stored_procedures(database)
     c.add_four_digit_function()
-
+    c.add_wealth_v190_recode_function()
 
 if __name__ == "__main__":
     # execute only if run as a script

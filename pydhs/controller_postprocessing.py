@@ -61,3 +61,13 @@ class Controller_postprocessing():
                 v007 = four_digit_date(trim(v007));
         """
         self.db.get_regular_cursor_query_no_return(query)
+
+    def update_v190_recode(self):
+
+        query = """
+            update
+                intersection_table_birth
+            set 
+                v190 = wealth_v190_recode(trim(v190));
+        """
+        self.db.get_regular_cursor_query_no_return(query)

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8467cf9d-7cec-4ad1-9317-382ee6ba53b2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pydhs/controller_postprocessing.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pydhs/controller_stored_procedures.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pydhs/controller_postprocessing.py" afterPath="$PROJECT_DIR$/pydhs/controller_postprocessing.py" />
       <change beforePath="$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py" afterPath="$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" afterPath="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/added_variables_birth_table.csv" afterPath="$PROJECT_DIR$/scripts/variable_lists/added_variables_birth_table.csv" />
-      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/intersectionVariableList.csv" afterPath="$PROJECT_DIR$/scripts/variable_lists/intersectionVariableList.csv" />
-      <change beforePath="$PROJECT_DIR$/scripts/variable_lists/variablesByTable.csv" afterPath="$PROJECT_DIR$/scripts/variable_lists/variablesByTable.csv" />
+      <change beforePath="$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py" afterPath="$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py" />
     </list>
     <ignored path="pydhs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,8 +79,8 @@
       <file leaf-file-name="controller_stored_procedures.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pydhs/controller_stored_procedures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="61" />
               <folding>
                 <element signature="e#325#368#0" expanded="true" />
               </folding>
@@ -92,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3_build_birth_intersection_table.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="3_build_birth_intersection_table.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -104,15 +100,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller_postprocessing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2_build_wealth_intersection_table.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding>
+                <element signature="e#2#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller_postprocessing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pydhs/controller_postprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="463">
+              <caret line="70" column="51" lean-forward="false" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
               <folding>
                 <element signature="e#325#368#0" expanded="true" />
-                <marker date="1513366817208" expanded="true" signature="1323:1434" ph="update inter... intersection_table_birth" />
-                <marker date="1513366817208" expanded="true" signature="1588:1703" ph="update inter... intersection_table_birth" />
+                <marker date="1513368777020" expanded="true" signature="1323:1434" ph="update inter... intersection_table_birth" />
+                <marker date="1513368777020" expanded="true" signature="1588:1703" ph="update inter... intersection_table_birth" />
+                <marker date="1513368777020" expanded="true" signature="1843:1961" ph="update inter... intersection_table_birth" />
               </folding>
             </state>
           </provider>
@@ -176,7 +185,6 @@
         <option value="$PROJECT_DIR$/scripts/prepare_database_for_processing.py" />
         <option value="$PROJECT_DIR$/pydhs/Data_Cleaning_Constants.py" />
         <option value="$PROJECT_DIR$/pydhs/Data_validator.py" />
-        <option value="$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py" />
         <option value="$PROJECT_DIR$/scripts/create_consolidated_database.py" />
         <option value="$PROJECT_DIR$/scripts/4_merge_wealth_to_births.py" />
         <option value="$PROJECT_DIR$/pydhs/Database.py" />
@@ -188,10 +196,11 @@
         <option value="$PROJECT_DIR$/scripts/6_merge_country_data_to_births.py" />
         <option value="$PROJECT_DIR$/pydhs/Controller.py" />
         <option value="$PROJECT_DIR$/pydhs/controller_countrydata.py" />
+        <option value="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
         <option value="$PROJECT_DIR$/pydhs/controller_stored_procedures.py" />
+        <option value="$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py" />
         <option value="$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py" />
         <option value="$PROJECT_DIR$/pydhs/controller_postprocessing.py" />
-        <option value="$PROJECT_DIR$/scripts/3_build_birth_intersection_table.py" />
       </list>
     </option>
   </component>
@@ -689,20 +698,6 @@
       <option name="presentableId" value="Default" />
       <updated>1474501598024</updated>
     </task>
-    <task id="LOCAL-00016" summary="Added function to comvert all table names and column names to lowercase.">
-      <created>1476822509640</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1476822509640</updated>
-    </task>
-    <task id="LOCAL-00017" summary="added feature to add the table name to each table. So that is great. This should now propagate to the intersection of the table fields.">
-      <created>1476832141611</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1476832141611</updated>
-    </task>
     <task id="LOCAL-00018" summary="added script to scripts folder for preparing database for generating the union and intersection tables.">
       <created>1476833045875</created>
       <option name="number" value="00018" />
@@ -1032,7 +1027,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512060662773</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="added functions to convert dates to 4 digits.">
+      <created>1513367008745</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1513367008745</updated>
+    </task>
+    <task id="LOCAL-00066" summary="added functions to recode the wealth variable.">
+      <created>1513368475554</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1513368475554</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1077,7 +1086,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33672318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33672318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24785276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1113,8 +1122,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added functions to create the wealth file columns in the database." />
-    <MESSAGE value="added functions to all wealth v002 and v003 columns to intersection table. This will allow me to check the results to see if they make sense." />
     <MESSAGE value="restructuring create_consolidated_database.py script to build both the wealth and birth tables separately. &#10;&#10;Now I have to test it." />
     <MESSAGE value="changing table renaming routine to define name as sql identifier to pass without quotes." />
     <MESSAGE value="lots of updates." />
@@ -1138,7 +1145,9 @@
     <MESSAGE value="fixed #9 so matching on b2 instead of v007" />
     <MESSAGE value=" so matching on b2 instead of v007" />
     <MESSAGE value="needed to disable update of database because it was done before." />
-    <option name="LAST_COMMIT_MESSAGE" value="needed to disable update of database because it was done before." />
+    <MESSAGE value="added functions to convert dates to 4 digits." />
+    <MESSAGE value="added functions to recode the wealth variable." />
+    <option name="LAST_COMMIT_MESSAGE" value="added functions to recode the wealth variable." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1547,14 +1556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/Data_Cleaning_Constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1617,16 +1618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pydhs/controller_countrydata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -1643,25 +1634,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/controller_stored_procedures.py">
+    <entry file="file://$PROJECT_DIR$/scripts/1_prepare_database_for_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#325#368#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pydhs/controller_postprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-          <folding>
-            <element signature="e#325#368#0" expanded="true" />
-            <marker date="1513366817208" expanded="true" signature="1323:1434" ph="update inter... intersection_table_birth" />
-            <marker date="1513366817208" expanded="true" signature="1588:1703" ph="update inter... intersection_table_birth" />
-          </folding>
+        <state relative-caret-position="416">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1671,6 +1648,39 @@
           <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/2_build_wealth_intersection_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/controller_stored_procedures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="61" />
+          <folding>
+            <element signature="e#325#368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pydhs/controller_postprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="70" column="51" lean-forward="false" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+          <folding>
+            <element signature="e#325#368#0" expanded="true" />
+            <marker date="1513368777020" expanded="true" signature="1323:1434" ph="update inter... intersection_table_birth" />
+            <marker date="1513368777020" expanded="true" signature="1588:1703" ph="update inter... intersection_table_birth" />
+            <marker date="1513368777020" expanded="true" signature="1843:1961" ph="update inter... intersection_table_birth" />
           </folding>
         </state>
       </provider>
