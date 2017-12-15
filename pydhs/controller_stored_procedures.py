@@ -45,8 +45,7 @@ class Controller_stored_procedures():
 
     def add_four_digit_function(self):
 
-        query = """
-            
+        query = """    
             create or replace function 4_digit_date(dt TEXT)
                 returns TEXT
                 as 
@@ -76,3 +75,35 @@ class Controller_stored_procedures():
                 """
 
         self.db.get_regular_cursor_query_no_return(query)
+
+    def add_wealth_v190_recode_function(self):
+
+        query = """
+                create or replace function wealth_v190_recode(val TEXT)
+                returns TEXT
+                as 
+                $$
+                BEGIN     
+                
+                CASE val
+                    WHEN '1.0', '2.0', '3.0', '4.0', '5.0' THEN
+                        RETURN CAST(CAST(CAST(val as FLOAT )as INT) as TEXT);
+                    WHEN 'lowest quintile' THEN
+                        RETURN '1';  
+                    WHEN 'second quintile' THEN
+                        RETURN '2';
+                    WHEN 'middle quintile' THEN
+                        RETURN '3';
+                    WHEN 'fourth quintile' THEN
+                        RETURN '4';
+                    WHEN 'highest quintile' THEN
+                        RETURN '5';
+                    WHEN '1', '2', '3', '4', '5' THEN 
+                    RETURN val;
+                    END CASE;
+                END;
+                $$ 
+                LANGUAGE plpgsql;  
+                """
+        self.db.get_regular_cursor_query_no_return(query)
+
