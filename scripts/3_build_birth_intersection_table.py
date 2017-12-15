@@ -18,6 +18,7 @@ def main_birth(database, tablefile):
     d = Controller_postprocessing(database)
     d.update_b2_dates_to_four_digits()
     d.update_v007_dates_to_four_digits()
+    d.update_v190_recode()
 
     print("birth intersection table built.")
 

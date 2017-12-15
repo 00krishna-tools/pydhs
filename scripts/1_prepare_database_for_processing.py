@@ -37,3 +37,4 @@ if __name__ == "__main__":
     # execute only if run as a script
     main('db_dhs_global', 'tablelists/tablelist_all.csv')
     main_births('db_dhs_global', 'tablelists/tablelist_br.csv', 'variable_lists/added_variables_birth_table.csv')
+    load_stored_procedures('db_dhs_global')
