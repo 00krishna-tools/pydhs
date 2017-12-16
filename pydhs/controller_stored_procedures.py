@@ -46,7 +46,7 @@ class Controller_stored_procedures():
     def add_four_digit_function(self):
 
         query = """    
-            create or replace function 4_digit_date(dt TEXT)
+            create or replace function four_digit_date(dt TEXT)
                 returns TEXT
                 as 
                 $$
