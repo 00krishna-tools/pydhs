@@ -100,6 +100,8 @@ class Controller_stored_procedures():
                         RETURN '5';
                     WHEN '1', '2', '3', '4', '5' THEN 
                     RETURN val;
+                    ELSE 
+                        RETURN val;
                     END CASE;
                 END;
                 $$ 
