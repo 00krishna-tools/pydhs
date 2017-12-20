@@ -54,24 +54,20 @@ class Controller_stored_procedures():
                     intDate INT;
                     newDate TEXT;
                 BEGIN     
+                    intDate = dt::INT;
                 
-                
-                
-                    intDate = dt::INT
-                
-                    IF intDate > 1000 THEN
-                        RETURN dt
-                
-                    IF intDate < 18 THEN
-                        intDate = intDate + 2000
-                    ELSIF intDate > 18 THEN      
-                        intDate = intDate + 1900
-                
-                    RETURN intDate::TEXT
-                
+                    IF (intDate > 1000) THEN
+                        RETURN dt;
+		        END IF;
+                IF (intDate < 18) THEN
+                    intDate = intDate + 2000;
+                ELSIF (intDate > 18) THEN      
+                    intDate = intDate + 1900;
+		        END IF;
+                    RETURN intDate::TEXT;
                 END;
                 $$ 
-                LANGUAGE plpgsql;  
+                LANGUAGE plpgsql; 
                 """
 
         self.db.get_regular_cursor_query_no_return(query)

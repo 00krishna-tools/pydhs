@@ -75,8 +75,6 @@ class Data_Validator():
 
         return (self.c.db.get_regular_cursor_query(query, (AsIs(var),)))
 
-def main(dbname, tablelist, varlist):
-
 
 
 if __name__ == "__main__":
